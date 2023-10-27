@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caju - Multi Benefícios Visa</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- VueJs -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- Link provisório: https://caju-multi-beneficios-visa.web.app/ -->
+</head>
+
+<body>
+   <div id="app">
+        <header>
+            <img class="header__img" src="./src/logo.svg" alt="Logo">
+        </header>
+
+        <main>
+            <section class="banner">
+                <img class="banner__grafismo" src="./src/grafismos/graf-1.svg" alt="grafismo">
+                
+                <div class="body__width">
+                    <div class="banner__grid">
+                        <div class="general--gap__texts">
+                            <h1>
+                                Multibenefícios: o que são e quais as vantagens de oferecer para os seus colaboradores
+                            </h1>
+                            <p>
+                                Multibenefícios são uma inovação na forma como as empresas fazem a gestão de benefícios para seus colaboradores.
+                            </p>
+                            <p>
+                                Ao oferecer uma variedade maior de opções personalizadas, desde vale-alimentação até incentivo à cultura, as <strong>empresas estão reconhecendo a importância de se adaptarem para levarem mais flexibilidade e liberdade para os colaboradores.</strong>
+                            </p>
+                        </div>
+                        <div class="banner__form">
+                            <div class="inputs__container" v-for="coisas in 6">
+                                <label for="">Nome é seu nome?</label>
+                                <input type="text" placeholder="Digite aqui">
+                            </div>
+                            <button class="btn__green">Quero saber mais</button>
+                            <p class="banner__disclaimer">
+                                A Caju precisa dos seus dados para enviar informações sobre produtos e serviços, além de conteúdos que podem te interessar. Você pode deixar de receber essas comunicações quando quiser. Para obter mais informações, veja nossa Política de Privacidade.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <img class="card__grafismo" src="./src/grafismos/graf-5.svg" alt="Grafismo">
+                <div class="body__width">
+                    <div class="card__grid">
+                        <div class="card__column">
+                            <div class="card__card" v-for="coisas in 3">
+                                <h3 class="card__percentage">
+                                    63,4%
+                                </h3>
+                                <img src="">
+                                <div class="card__container">
+                                    <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
+                                    <p class="card__description">
+                                        dos colaboradores afirmam dar tanta importância ao pacote de benefícios quanto ao salário.
+                                    </p>
+                                    <p class="card__disclaimer">
+                                        Fonte: Robert Half
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="card__img" src="./src/card.svg" alt="Cartão caju">
+                    </div>
+
+                    <div class="general--container__button"><button class="btn__red">Conheça Caju Multibenefícios</button></div>
+
+                </div>
+            </section>
+
+            <section class="rh">
+                <img class="rg__grafismo" src="./src/grafismos/graf-2.svg">
+                <div class="body__width">
+                    <div class="rh__grid">
+                        <div class="rg__ctn--img"><img class="rg__img" src="./src/Imagem-visa.png"></div>
+                        <div>
+                            <h1>
+                                Bom pro colaborador, <br> bom pro RH
+                            </h1>
+                            <br>
+                            <p>
+                                Oferecer multibenefícios traz uma série de vantagens tanto para o RH quanto para os colaboradores:
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="rg__box box__orange">
+                        <div>
+                            <img src="./src/heart.svg">
+                            <p class="box__title">
+                                Para o RH
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="box__ctn">
+                                <img src="./src/icons/eng.svg">
+                                <div>
+                                    <h6>
+                                        Facilidade operacional
+                                    </h6>
+                                    <p>
+                                        Gestão centralizada de vários benefícios em um único sistema, poupando tempo e recursos.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="box__ctn">
+                                <img src="./src/icons/eng.svg">
+                                <div>
+                                    <h6>
+                                        Facilidade operacional
+                                    </h6>
+                                    <p>
+                                        Gestão centralizada de vários benefícios em um único sistema, poupando tempo e recursos.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="box__ctn">
+                                <img src="./src/icons/eng.svg">
+                                <div>
+                                    <h6>
+                                        Facilidade operacional
+                                    </h6>
+                                    <p>
+                                        Gestão centralizada de vários benefícios em um único sistema, poupando tempo e recursos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rg__box box__green">
+                        <div>
+                            <img src="./src/person.svg">
+                            <p class="box__title">
+                                Para o RH
+                            </p>
+                        </div>
+
+                        <div>
+                            <div class="box__ctn">
+                                <img src="./src/icons/eng.svg">
+                                <div>
+                                    <h6>
+                                        Facilidade operacional
+                                    </h6>
+                                    <p>
+                                        Gestão centralizada de vários benefícios em um único sistema, poupando tempo e recursos.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="box__ctn">
+                                <img src="./src/icons/eng.svg">
+                                <div>
+                                    <h6>
+                                        Facilidade operacional
+                                    </h6>
+                                    <p>
+                                        Gestão centralizada de vários benefícios em um único sistema, poupando tempo e recursos.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="box__ctn">
+                                <img src="./src/icons/eng.svg">
+                                <div>
+                                    <h6>
+                                        Facilidade operacional
+                                    </h6>
+                                    <p>
+                                        Gestão centralizada de vários benefícios em um único sistema, poupando tempo e recursos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="general--container__button">
+                        <button class="btn__green">Leve Caju para sua empresa!</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="saber">
+                <div class="body__width">
+                    <h1>
+                        Quer saber mais?
+                    </h1>
+
+                    <div class="saber__grid">
+                        <div class="saber__box saber--red">
+                            <img src="./src/carteira.svg" class="saber__img">
+                            <h4 class="saber__h4">O que é um cartão <br> multibenefícios e como <br> funciona?</h4>
+                            <p class="saber__description">Saiba como um cartão multibenefícios facilita a gestão de diferentes categorias de benefícios.</p>
+                            <button class="saber__button">Confira as vantagens!</button>
+                        </div>
+                        <div class="saber__box saber--orange">
+                            <img src="./src/premio.svg" class="saber__img">
+                            <h4 class="saber__h4">4 soluções da Caju <br> para atração e <br> retenção de talentos</h4>
+                            <p class="saber__description">Descubra como a Caju pode te ajudar a impulsionar sua estratégia de atração e retenção de talentos com soluções descomplicadas e poderosas.</p>
+                            <button class="saber__button">Saiba mais!</button>
+                        </div>
+                        <div class="saber__box saber--green">
+                            <img src="./src/docs.svg" class="saber__img">
+                            <h4 class="saber__h4">O que é política de benefícios, <br> suas vantagens e como <br> implementar na sua empresa</h4>
+                            <p class="saber__description">Entenda qual é a importância de construir uma política de benefícios na sua empresa e aprenda o passo a passo para criá-la.</p>
+                            <button class="saber__button">Descubra agora!</button>
+                        </div>
+                        <div class="saber__box saber--yellow">
+                            <img src="./src/cartao-person.svg" class="saber__img">
+                            <h4 class="saber__h4">Vale-refeição e vale-alimentação: o que é, <br> principais diferenças e como oferecer <br> esses benefícios aos seus colaboradores</h4>
+                            <p class="saber__description">Saiba quais são as principais diferenças e vantagens entre vale-alimentação e vale-refeição.</p>
+                            <button class="saber__button">Confira mais!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="empresa">
+                <img class="empresa__grafismo--1" src="./src/grafismos/graf-3.svg">
+                <img class="empresa__grafismo--2" src="./src/grafismos/graf-4.svg">
+
+                <div class="body__border body--orange"></div>
+                <div class="body__width">
+                    <div class="empresa__grid">
+                        <div class=" general--gap__texts">
+                            <h1>
+                                Sua empresa de acordo com as necessidades atuais
+                            </h1>
+                            <p>
+                                Oferecer multibenefícios tem se tornado cada vez mais uma <strong>ação altamente competitiva para as empresas que buscam atender às demandas dinâmicas do mercado</strong> e às expectativas em constante evolução de seus colaboradores.
+                            </p>
+                            <p>
+                                Se hoje já inovamos o modelo tradicional de trabalho, não tem porque os benefícios da sua empresa ficarem presos ao passado.
+                                <strong> A Caju tem multibenefícios que deixam todo tipo de empresa mais leve:</strong>
+                            </p>
+                        </div>
+                        <div>
+
+                            <div class="empresa__card" v-for="card in empresa__card">
+                                <img :src="`./src/icons/` + card.icon + '.svg' ">
+                                <p>{{ card.text }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="empresa__grid">
+
+                        <img class="empresa__img" src="./src/person-card.png">
+
+                        <div class="gap__texts general--gap__texts">
+                            <h1>Quer saber como Caju Multibenefícios funciona na prática? </h1>
+                            
+                            <p>Receba um vídeo de demonstração e entenda como a Caju pode ajudar o seu RH a ter mais agilidade e os seus colaboradores mais flexibilidade.</p>
+                            
+                            <button class="btn__red">Conheça Caju Multibenefícios</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="prova">
+                <div class="body__width">
+                    <div class="prova__grid">
+                        <div class="prova__container--cards">
+                            <div class="prova__card">
+                                <img class="prova__img" src="./src/olist.png">
+                                <p>
+                                    Como o Olist subiu 7% em seu eNPS promovendo melhorias nos benefícios corporativos.
+                                </p>
+                            </div>
+                            <div class="prova__card">
+                                <img class="prova__img" src="./src/loft.png">
+                                <p>
+                                    Loft implementa pacote de multibenefícios da Caju durante a pandemia.
+                                </p>
+                            </div>
+                            <div class="prova__card">
+                                <img class="prova__img" src="./src/bt_creditos.png">
+                                <p>
+                                    Como a BT Créditos otimizou pagamento de benefícios com a Caju.
+                                </p>
+                            </div>
+                        </div>
+                        <iframe class="prova__iframe" src="https://www.youtube.com/embed/5ZwpJdSTp8s?si=Mx6ccgzr4DozhxzO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="general--container__button">
+                        <button class="btn__red">Leve Caju para sua empresa!</button>
+                    </div>
+                </div>
+            </section> 
+            
+            
+        </main>
+
+        <footer>
+            <div class="footer__space">
+                <img class="footer__logo" src="./src/logo.svg" alt="Logo Caju">
+                <div class="footer__icons">
+                    <img src="./src/icons/insta.svg" alt="Instagram">
+                    <img src="./src/icons/linkedin.svg" alt="LinkedIn">
+                    <img src="./src/icons/face.svg" alt="Facebook">
+                    <img src="./src/icons/youtube.svg" alt="youtube">
+                    <img src="./src/icons/x.svg" alt="X">
+                </div>
+            </div>
+            <hr>
+            <div class="footer__space">
+                <p>Caju ® 2023. Todos os direitos reservados.</p>
+                <p class="footer__termos">Política de privacidade | Termos de Uso</p>
+            </div>
+        </footer>
+   </div>
+</body>
+<script>
+    new Vue({
+        el: '#app',
+        data(){
+            return {
+                empresa__card: [
+                    {
+                        icon: 'fork',
+                        text: 'Até 8 categorias de benefícios em um único cartão'
+                    },
+                    {
+                        icon: 'loja',
+                        text: 'Bandeira Visa - aceita em mais de 2 milhões de estabelecimentos'
+                    },
+                    {
+                        icon: 'gear',
+                        text: 'Gestão centralizada de todos os benefícios'
+                    },
+                    {
+                        icon: 'lock',
+                        text: 'Toda segurança jurídica para os benefícios seguindo os padrões da CLT'
+                    },
+                    {
+                        icon: 'phone',
+                        text: 'Atendimento todos os dias, inclusive finais de semana e feriados'
+                    },
+                ],
+
+            }
+        }
+    })
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Inter', sans-serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box !important;
+}
+
+:root {
+    --orange: #FF7500;
+    --red: #E80537;
+    --green: #59D359;
+    --cinza: #FAFAFA;
+}
+
+/* General */
+
+body {
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 32px;
+}
+
+.general--container__button {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    width: 100%;
+}
+
+.general--gap__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.general--gap__texts p {
+    line-height: 26px;
+}
+
+.body__width {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Buttons */
+
+.btn__green,
+.btn__red {
+    border-radius: 8px;
+    height: 50px;
+    padding: 0 20px;
+    color: white;
+    border: none;
+    font-weight: 600;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.btn__green {
+    background: var(--green);
+}
+
+.btn__green:hover {
+    background: #53c553;
+}
+
+.btn__red {
+    background: var(--red);
+}
+
+.btn__red:hover {
+    background: #a70427;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 98px;
+    width: 100%;
+    background: var(--cinza);
+}
+
+.header__img {
+    height: 48px;
+}
+
+/* Banner */
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: var(--red);
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner__grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    justify-items: center;
+    gap: 40px;
+}
+
+.banner__grafismo {
+    position: absolute;
+    bottom: -600px;
+    left: 0;
+}
+
+.banner__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--orange);
+    padding: 20px;
+    height: max-content;
+    border-radius: 16px;
+}
+
+.inputs__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__form input {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    height: 32px;
+    border-radius: 5px;
+    margin-top: 4px;
+    border: none;
+}
+
+.banner__disclaimer {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* Card */
+
+.card {
+    position: relative;
+    transform: translatey(-62px);
+    border-radius: 60px;
+    background: white;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.card__grafismo {
+    position: absolute;
+    bottom: 60px;
+}
+
+.card__grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.card__column {
+    display: flex; 
+    flex-direction:  column; 
+    justify-content: center;
+    height: 100%;
+    padding-top: 60px;
+}
+
+.card__card {
+    display: flex;
+    gap: 40px;
+    height: 130px;
+    padding: 20px;
+    background: #9BE59B;
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 14px;
+}
+
+.card__percentage {
+    font-size: 46px;
+    color: #163516;
+    font-weight: 900;
+}
+
+.card__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__img {
+    width: 100%;
+}
+
+.card__disclaimer {
+    font-size: 12px;
+}
+
+.card__icon {
+    position: absolute;
+    left: -40px;
+    top: -4px;
+    width: 26px;
+}
+
+/* RH */
+
+.rh {
+    position: relative;
+    background: var(--red);
+    width: 100%;
+    border-radius: 60px 60px 0 0 ;
+    transform: translateY(-62px);
+    padding: 100px 0;
+}
+
+.rg__grafismo {
+    position: absolute;
+    right: 0;
+}
+
+.rh__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    height: 400px;
+    gap: 80px;
+}
+
+.rg__ctn--img {
+    position: relative;
+}
+
+.rg__img {
+    position: absolute;
+    top: -200px;
+    width: 100%;
+}
+
+.rg__box {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    border-radius: 60px;
+    padding: 60px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.rg__box hr {
+    border: none;
+    border-bottom: 1px solid white;
+    margin: 40px 0;
+}
+
+.box__title {
+    font-size: 52px;
+    margin-top: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.box__orange {
+    background: var(--orange);
+}
+
+.box__green {
+    background: var(--green);
+
+}
+
+.rh h6 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.box__ctn {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.box__text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Saber */
+
+.saber {
+    background: white;
+    border-radius: 60px 60px 0 0;
+    padding: 100px 0;
+    transform: translateY(-122px);
+}
+
+.saber__grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.saber__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 35px;
+    padding: 40px;
+}
+
+.saber__h4 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.saber__description {
+    font-weight: 400;
+}
+
+.saber .saber__button {
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: none;
+    width: max-content;
+}
+
+.saber--red {
+   background: var(--red); 
+}
+
+.saber--red .saber__button {
+    background: var(--green); 
+ }
+
+.saber--orange {
+   background: var(--orange); 
+}
+
+.saber--orange  .saber__button, .saber--green .saber__button, .saber--yellow .saber__button  {
+    background: var(--red); 
+ }
+
+.saber--green {
+  background: var(--green);  
+}
+
+.saber--yellow {
+  background: #FFCB2E;  
+}
+
+
+.saber__img {
+    width: 150px;
+    height: 150px;
+}
+
+/* empresa */
+
+.empresa {
+    position: relative;
+    background: var(--orange);
+    padding: 100px 0;
+    padding-bottom: 0;
+}
+
+.empresa__grafismo--1 {
+    position: absolute;
+    top: -50%;
+    left: -280px;
+    z-index: 1;
+}
+
+.empresa__grafismo--2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 400px;
+}
+
+.empresa__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.empresa__img {
+    width: 100%;
+}
+
+.body__border {
+    position: absolute;
+    top: -58px;
+    border-radius: 60px 60px 0 0;
+    height: 62px;
+    width: 100%;
+}
+
+.body--orange {
+    background: var(--orange);
+}
+
+.empresa__card {
+    display: flex;
+    align-items: center;
+    background: #FFAB66;
+    height: 75px;
+    border-radius: 12px;
+    padding: 0 30px;
+    margin-bottom: 20px;
+    gap: 20px;;
+}
+
+/* prova */
+
+
+.prova {
+    position: relative;
+    margin: 100px 0 ;
+}
+
+.prova__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.prova__container--cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.prova__card {
+    display: flex;
+    align-items: center;
+    background: var(--cinza);
+    color: black;
+    height: 86px;
+    gap: 40px;
+    padding: 0 20px;
+    border-radius: 12px;
+}
+
+.prova__img {
+    height: 42px;   
+}
+
+.prova__iframe {
+    width: 560px;
+    height: 315px;
+    border-radius: 20px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: var(--cinza);
+    width: 100%;
+    height: 130px;
+    color: #767676;
+    gap: 20px;
+    padding: 20px 40px;
+    font-weight: 500;
+}
+
+footer hr {
+    border: none;
+    border-bottom: 1px solid #767676;
+    
+}
+
+.footer__logo {
+    height: 26px;
+}
+
+.footer__space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__icons {
+    display: flex;
+    gap: 10px;
+}
+</style>
+</html>
