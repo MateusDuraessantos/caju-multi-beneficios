@@ -76,14 +76,14 @@
                 </div>
             </section>
 
-            <section class="card">
+            <section class="card" id="myDiv">
                 <img class="card__grafismo" src="./src/grafismos/graf-5.svg" alt="Grafismo">
                 <div class="body__width">
                     <div class="card__grid">
                         <div class="card__column">
                             <div class="card__card">
                                 <h3 class="card__percentage">
-                                    63,4%
+                                    {{ contador1 }}%
                                 </h3>
                                 <div class="card__container">
                                     <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
@@ -98,7 +98,7 @@
 
                             <div class="card__card">
                                 <h3 class="card__percentage">
-                                    48%
+                                    {{ contador2 }}%
                                 </h3>
                                 <div class="card__container">
                                     <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
@@ -113,7 +113,7 @@
 
                             <div class="card__card">
                                 <h3 class="card__percentage">
-                                    80%
+                                    {{ contador3 }}%
                                 </h3>
                                 <div class="card__container">
                                     <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
@@ -407,6 +407,9 @@
         el: '#app',
         data(){
             return {
+                contador1: 1,
+                contador2: 1,
+                contador3: 1,
                 empresa__card: [
                     {
                         icon: 'fork',
@@ -429,8 +432,56 @@
                         text: 'Atendimento todos os dias, inclusive finais de semana e feriados'
                     },
                 ],
-
+                interval1: 1,
+                interval2: 1,
+                interval3: 1,
             }
+        },
+        mounted() {
+            this.countPercentage1()
+            this.countPercentage2()
+            this.countPercentage3()
+        },
+        methods: {
+
+            texteScreen(entries, observer){
+                console.log(entries);
+                document.getElementById('myDiv')
+                observer.observe(target)
+                console.log(target);
+                
+            },  
+
+            countPercentage1() {
+                setTimeout(() => {
+                    if (this.contador1 < 63.4 ) {
+                        this.contador1 = parseFloat((this.contador1 + 1.1).toFixed(3))
+                        this.countPercentage1()
+                    }  
+                    else {
+                        this.contador1 = 64.4
+                    }
+                    this.interval1 *= 1.1
+                }, this.interval1);
+            },
+            countPercentage2() {
+                setTimeout(() => {
+                    if (this.contador2 < 48 ) {
+                        this.contador2 += 1
+                        this.countPercentage2()
+                    }  
+                    this.interval2 *= 1.14
+                }, this.interval2);
+            },
+            countPercentage3() {
+                setTimeout(() => {
+                    if (this.contador3 < 80 ) {
+                        this.contador3 += 1
+                        this.countPercentage3()
+                    }  
+                    this.interval3 *= 1.07
+                }, this.interval3);
+            },
         }
     })
 </script>
@@ -657,7 +708,7 @@ header {
 
 .card__card {
     display: grid;
-    grid-template-columns: 160px 1fr;
+    grid-template-columns: 166px 1fr;
     gap: 40px;
     height: 130px;
     padding: 20px;
@@ -1153,6 +1204,7 @@ footer hr {
 
     .saber__h4 {
         font-size: 18px;
+        margin-right: 42px;
     }
 }
 
