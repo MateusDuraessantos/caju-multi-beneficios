@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,10 +34,39 @@
                             </p>
                         </div>
                         <div class="banner__form">
-                            <div class="inputs__container" v-for="coisas in 6">
+                            <div class="inputs__container">
                                 <label for="">Nome é seu nome?</label>
                                 <input type="text" placeholder="Digite aqui">
                             </div>
+                            <div class="inputs__container">
+                                <label for="">Qual sua empresa?</label>
+                                <input type="text" placeholder="Digite aqui">
+                            </div>
+                            <div class="inputs__container">
+                                <label for="">Qual seu cargo?</label>
+                                <input type="text" placeholder="Digite aqui">
+                            </div>
+                            <div class="inputs__container">
+                                <label for="">Qual seu email?</label>
+                                <input type="text" placeholder="Digite aqui">
+                            </div>
+                            <div class="inputs__container">
+                                <label for="">Em qual área você trabalha?</label>
+                                <input type="text" placeholder="Digite aqui">
+                            </div>
+                            <div class="inputs__container">
+                                <label for="">Quantos funcionários tem a sua empresa?</label>
+                                <input type="text" placeholder="Digite aqui">
+                            </div>
+                            <div class="inputs__container">
+                                <label for="">Qual seu maior desafio?</label>
+                                <input type="text" placeholder="Digite aqui">
+                            </div>
+                            <div class="inputs__container">
+                                <label for="">Qual seu telefone?</label>
+                                <input type="text" placeholder="Digite aqui">
+                            </div>
+
                             <button class="btn__green">Quero saber mais</button>
                             <p class="banner__disclaimer">
                                 A Caju precisa dos seus dados para enviar informações sobre produtos e serviços, além de conteúdos que podem te interessar. Você pode deixar de receber essas comunicações quando quiser. Para obter mais informações, veja nossa Política de Privacidade.
@@ -52,14 +81,13 @@
                 <div class="body__width">
                     <div class="card__grid">
                         <div class="card__column">
-                            <div class="card__card" v-for="coisas in 3">
+                            <div class="card__card">
                                 <h3 class="card__percentage">
                                     63,4%
                                 </h3>
-                                <img src="">
                                 <div class="card__container">
                                     <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
-                                    <p class="card__description">
+                                    <p class="card__description--responsive">
                                         dos colaboradores afirmam dar tanta importância ao pacote de benefícios quanto ao salário.
                                     </p>
                                     <p class="card__disclaimer">
@@ -67,6 +95,40 @@
                                     </p>
                                 </div>
                             </div>
+
+                            <div class="card__card">
+                                <h3 class="card__percentage">
+                                    48%
+                                </h3>
+                                <div class="card__container">
+                                    <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
+                                    <p class="card__description--responsive">
+                                        das empresas pensam em oferecer um pacote de benefícios mais flexíveis diante do aumento do turnover e dos desafios econômicos do país
+                                    </p>
+                                    <p class="card__disclaimer">
+                                        Fonte: Pesquisa de Remuneração Total 2022
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="card__card">
+                                <h3 class="card__percentage">
+                                    80%
+                                </h3>
+                                <div class="card__container">
+                                    <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
+                                    <p class="card__description--responsive">
+                                        das empresas tiveram um aumento de produtividade com um programa de benefícios mais flexível.
+                                    </p>
+                                    <p class="card__disclaimer">
+                                        Fonte: International Workplace Group
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+
                         </div>
                         <img class="card__img" src="./src/card.svg" alt="Cartão caju">
                     </div>
@@ -77,10 +139,10 @@
             </section>
 
             <section class="rh">
-                <img class="rg__grafismo" src="./src/grafismos/graf-2.svg">
+                <img class="rh__grafismo" src="./src/grafismos/graf-2.svg">
                 <div class="body__width">
                     <div class="rh__grid">
-                        <div class="rg__ctn--img"><img class="rg__img" src="./src/Imagem-visa.png"></div>
+                        <div class="rh__ctn--img"><img class="rh__img" src="./src/Imagem-visa.png"></div>
                         <div>
                             <h1>
                                 Bom pro colaborador, <br> bom pro RH
@@ -92,10 +154,10 @@
                         </div>
                     </div>
 
-                    <div class="rg__box box__orange">
-                        <div>
+                    <div class="rh__box box__orange">
+                        <div class="rh__box--responsive">
                             <img src="./src/heart.svg">
-                            <p class="box__title">
+                            <p class="rh__title">
                                 Para o RH
                             </p>
                         </div>
@@ -143,10 +205,10 @@
                         </div>
                     </div>
 
-                    <div class="rg__box box__green">
-                        <div>
+                    <div class="rh__box box__green">
+                        <div class="rh__box--responsive">
                             <img src="./src/person.svg">
-                            <p class="box__title">
+                            <p class="rh__title">
                                 Para o RH
                             </p>
                         </div>
@@ -208,28 +270,36 @@
 
                     <div class="saber__grid">
                         <div class="saber__box saber--red">
-                            <img src="./src/carteira.svg" class="saber__img">
-                            <h4 class="saber__h4">O que é um cartão <br> multibenefícios e como <br> funciona?</h4>
+                            <div class="saber__box--responsive">
+                                <img src="./src/carteira.svg" class="saber__img">
+                                <h4 class="saber__h4">O que é um cartão <br> multibenefícios e como <br> funciona?</h4>
+                            </div>
                             <p class="saber__description">Saiba como um cartão multibenefícios facilita a gestão de diferentes categorias de benefícios.</p>
-                            <button class="saber__button">Confira as vantagens!</button>
+                            <button class="saber-btn__green">Confira as vantagens!</button>
                         </div>
                         <div class="saber__box saber--orange">
-                            <img src="./src/premio.svg" class="saber__img">
-                            <h4 class="saber__h4">4 soluções da Caju <br> para atração e <br> retenção de talentos</h4>
+                            <div class="saber__box--responsive">
+                                <img src="./src/premio.svg" class="saber__img">
+                                <h4 class="saber__h4">4 soluções da Caju <br> para atração e <br> retenção de talentos</h4>
+                            </div>
                             <p class="saber__description">Descubra como a Caju pode te ajudar a impulsionar sua estratégia de atração e retenção de talentos com soluções descomplicadas e poderosas.</p>
-                            <button class="saber__button">Saiba mais!</button>
+                            <button class="saber-btn__red">Saiba mais!</button>
                         </div>
                         <div class="saber__box saber--green">
-                            <img src="./src/docs.svg" class="saber__img">
-                            <h4 class="saber__h4">O que é política de benefícios, <br> suas vantagens e como <br> implementar na sua empresa</h4>
+                            <div class="saber__box--responsive">
+                                <img src="./src/docs.svg" class="saber__img">
+                                <h4 class="saber__h4">O que é política de benefícios, <br> suas vantagens e como <br> implementar na sua empresa</h4>
+                            </div>
                             <p class="saber__description">Entenda qual é a importância de construir uma política de benefícios na sua empresa e aprenda o passo a passo para criá-la.</p>
-                            <button class="saber__button">Descubra agora!</button>
+                            <button class="saber-btn__red">Descubra agora!</button>
                         </div>
                         <div class="saber__box saber--yellow">
-                            <img src="./src/cartao-person.svg" class="saber__img">
-                            <h4 class="saber__h4">Vale-refeição e vale-alimentação: o que é, <br> principais diferenças e como oferecer <br> esses benefícios aos seus colaboradores</h4>
+                            <div class="saber__box--responsive">
+                                <img src="./src/cartao-person.svg" class="saber__img">
+                                <h4 class="saber__h4">Vale-refeição e vale-alimentação: o que é, <br> principais diferenças e como oferecer <br> esses benefícios aos seus colaboradores</h4>
+                            </div>
                             <p class="saber__description">Saiba quais são as principais diferenças e vantagens entre vale-alimentação e vale-refeição.</p>
-                            <button class="saber__button">Confira mais!</button>
+                            <button class="saber-btn__red">Confira mais!</button>
                         </div>
                     </div>
                 </div>
@@ -279,38 +349,38 @@
             </section>
 
             <section class="prova">
-                <div class="body__width">
-                    <div class="prova__grid">
-                        <div class="prova__container--cards">
-                            <div class="prova__card">
-                                <img class="prova__img" src="./src/olist.png">
-                                <p>
-                                    Como o Olist subiu 7% em seu eNPS promovendo melhorias nos benefícios corporativos.
-                                </p>
+                <div class="prova__border">
+                    <div class="body__width">
+                        <div class="prova__grid">
+                            <div class="prova__container--cards">
+                                <div class="prova__card">
+                                    <img class="prova__img" src="./src/olist.png">
+                                    <p>
+                                        Como o Olist subiu 7% em seu eNPS promovendo melhorias nos benefícios corporativos.
+                                    </p>
+                                </div>
+                                <div class="prova__card">
+                                    <img class="prova__img" src="./src/loft.png">
+                                    <p>
+                                        Loft implementa pacote de multibenefícios da Caju durante a pandemia.
+                                    </p>
+                                </div>
+                                <div class="prova__card">
+                                    <img class="prova__img" src="./src/bt_creditos.png">
+                                    <p>
+                                        Como a BT Créditos otimizou pagamento de benefícios com a Caju.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="prova__card">
-                                <img class="prova__img" src="./src/loft.png">
-                                <p>
-                                    Loft implementa pacote de multibenefícios da Caju durante a pandemia.
-                                </p>
-                            </div>
-                            <div class="prova__card">
-                                <img class="prova__img" src="./src/bt_creditos.png">
-                                <p>
-                                    Como a BT Créditos otimizou pagamento de benefícios com a Caju.
-                                </p>
-                            </div>
+                            <iframe class="prova__iframe" src="https://www.youtube.com/embed/5ZwpJdSTp8s?si=Mx6ccgzr4DozhxzO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
-                        <iframe class="prova__iframe" src="https://www.youtube.com/embed/5ZwpJdSTp8s?si=Mx6ccgzr4DozhxzO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-
-                    <div class="general--container__button">
-                        <button class="btn__red">Leve Caju para sua empresa!</button>
+    
+                        <div class="general--container__button">
+                            <button class="btn__red">Leve Caju para sua empresa!</button>
+                        </div>
                     </div>
                 </div>
             </section> 
-            
-            
         </main>
 
         <footer>
@@ -325,7 +395,7 @@
                 </div>
             </div>
             <hr>
-            <div class="footer__space">
+            <div class="footer__space--bottom">
                 <p>Caju ® 2023. Todos os direitos reservados.</p>
                 <p class="footer__termos">Política de privacidade | Termos de Uso</p>
             </div>
@@ -364,6 +434,7 @@
         }
     })
 </script>
+
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -414,37 +485,69 @@ h1 {
 .body__width {
     position: relative;
     max-width: 1200px;
+    width: calc(100% - 100px);
     margin: auto;
 }
 
 /* Buttons */
 
+button {
+    cursor: pointer;
+}
+
 .btn__green,
-.btn__red {
+.btn__red
+ {
     border-radius: 8px;
     height: 50px;
     padding: 0 20px;
+}
+.btn__green,
+.btn__red,
+.saber-btn__green,
+.saber-btn__red {
     color: white;
     border: none;
     font-weight: 600;
     transition: .2s;
-    cursor: pointer;
 }
 
-.btn__green {
+.saber-btn__green, .saber-btn__red {
+    border-radius: 50px;
+    padding: 10px 20px;
+    width: max-content;
+}
+
+.btn__green, .saber-btn__green {
+    background: var(--green); 
+ }
+
+.btn__red, .saber-btn__red {
+    background: var(--red); 
+}
+
+.btn__green, .saber-btn__green {
     background: var(--green);
 }
 
-.btn__green:hover {
-    background: #53c553;
+.btn__green:hover, .saber-btn__green:hover {
+    background: #53c053;
 }
 
-.btn__red {
-    background: var(--red);
+.btn__red:hover, .saber-btn__red:hover {
+    background: #d30431;
 }
 
-.btn__red:hover {
-    background: #a70427;
+.btn__green:focus, .saber-btn__green:focus {
+    background: #0c740c;
+    color: white;
+    outline-color: transparent;
+}
+
+.btn__red:focus, .saber-btn__red:focus {
+    background: #890320;
+    color: white;
+    outline-color: transparent;
 }
 
 /* Header */
@@ -470,8 +573,9 @@ header {
     justify-content: center;
     gap: 40px;
     background: var(--red);
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+    padding: 100px 0 120px 0;
     overflow: hidden;
 }
 
@@ -552,7 +656,8 @@ header {
 }
 
 .card__card {
-    display: flex;
+    display: grid;
+    grid-template-columns: 160px 1fr;
     gap: 40px;
     height: 130px;
     padding: 20px;
@@ -601,7 +706,7 @@ header {
     padding: 100px 0;
 }
 
-.rg__grafismo {
+.rh__grafismo {
     position: absolute;
     right: 0;
 }
@@ -614,17 +719,17 @@ header {
     gap: 80px;
 }
 
-.rg__ctn--img {
+.rh__ctn--img {
     position: relative;
 }
 
-.rg__img {
+.rh__img {
     position: absolute;
     top: -200px;
     width: 100%;
 }
 
-.rg__box {
+.rh__box {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     border-radius: 60px;
@@ -633,13 +738,13 @@ header {
     margin-bottom: 40px;
 }
 
-.rg__box hr {
+.rh__box hr {
     border: none;
     border-bottom: 1px solid white;
     margin: 40px 0;
 }
 
-.box__title {
+.rh__title {
     font-size: 52px;
     margin-top: 10px;
     font-weight: 700;
@@ -703,29 +808,13 @@ header {
     font-weight: 400;
 }
 
-.saber .saber__button {
-    color: white;
-    border-radius: 50px;
-    padding: 10px 20px;
-    border: none;
-    width: max-content;
-}
-
 .saber--red {
    background: var(--red); 
 }
 
-.saber--red .saber__button {
-    background: var(--green); 
- }
-
 .saber--orange {
    background: var(--orange); 
 }
-
-.saber--orange  .saber__button, .saber--green .saber__button, .saber--yellow .saber__button  {
-    background: var(--red); 
- }
 
 .saber--green {
   background: var(--green);  
@@ -734,7 +823,6 @@ header {
 .saber--yellow {
   background: #FFCB2E;  
 }
-
 
 .saber__img {
     width: 150px;
@@ -759,7 +847,7 @@ header {
 
 .empresa__grafismo--2 {
     position: absolute;
-    bottom: 0;
+    bottom: -42px;
     right: 0;
     z-index: 1;
     width: 400px;
@@ -804,8 +892,15 @@ header {
 
 
 .prova {
+    background: var(--orange);
+}
+
+.prova__border {
     position: relative;
-    margin: 100px 0 ;
+    background: white;
+    border-radius: 60px 60px 0 0;
+    padding-top: 100px;
+    z-index: 1;
 }
 
 .prova__grid {
@@ -848,7 +943,7 @@ footer {
     flex-direction: column;
     background: var(--cinza);
     width: 100%;
-    height: 130px;
+    min-height: 130px;
     color: #767676;
     gap: 20px;
     padding: 20px 40px;
@@ -875,4 +970,232 @@ footer hr {
     gap: 10px;
 }
 </style>
+
+
+<!-- CSS Responsivo -->
+<style>
+@media only screen and (max-width: 1000px ) {
+    
+    /* Geral */
+    
+    .general--container__button {
+        margin: 50px 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .body__width {
+        width: calc(100% - 20px);
+    }
+
+    .saber__grid, .banner__grid, .card__grid, .rh__box, .empresa__grid, .prova__grid, .rh__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .banner__grafismo, .empresa__grafismo--1, .empresa__grafismo--2 {
+        display: none;
+    }
+
+    .saber, .body__border {
+        border-radius: 30px 30px 0 0 ;
+    }
+    
+    /* Empresa */
+
+    .empresa__grid {
+        padding: 12px;
+    }
+
+    /* Banner */
+
+    .banner {
+        padding-top: 44px;
+    }
+    
+    /* Card */
+
+    .prova__iframe {
+        width: 100%;
+    }
+
+    .card__card {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        align-items: center;
+        height: initial;
+        gap: 24px;
+    }
+    
+    .card__icon {
+        left: -82px;
+        top: 57%;
+    }
+
+    .card__percentage {
+        font-size: 30px;
+        margin-bottom: 42px;
+        text-align: center;
+        width: 98px;
+    }
+
+    .card {
+        border-radius: 30px;
+    }
+
+    .card__column {
+        padding-top: 0;
+    }
+
+    .card__img {
+        width: 50%;
+        margin-right: 100%;
+        margin-left: calc(25% - 8px);
+    }
+
+  
+
+    .footer__space--bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    /* Prova */
+
+    .prova {
+        margin-bottom: 60px;
+    }
+
+    .prova__card {
+        gap: 20px;
+    }
+
+    .prova__card {
+        padding: 20px;
+        height: initial;
+        box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .prova__border {
+        border-radius: 30px 30px 0 0;
+    }
+
+    /* empresa */
+    
+    .empresa {
+        padding-bottom: 100px;
+        padding-top: 0;
+    }
+
+    /* RH */
+
+    .rh__box hr {
+        margin: 20px 0;
+    }
+
+    .rh__box {
+        border-radius: 20px;
+        padding: 32px;
+    }
+
+    .rh__title {
+        font-size: 32px;
+    }
+
+    .rh__box--responsive {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .rh__box--responsive img {
+        width: 58px;
+    }
+
+    .rh__grafismo {
+        width: 200px;
+        top: 300px;
+    }
+
+    .rh__ctn--img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rh__grid {
+        gap: 34px;
+    }
+
+    .rh__img {
+        max-width: 400px;
+    }
+
+    /* Saber */
+
+    .saber {
+        padding: 40px 0 0 0;
+    }
+
+    .saber__box--responsive {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .saber__img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .saber__h4 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    header {
+        height: 60px;
+    }
+
+    .header__img {
+        height: 50%;
+    }
+
+    .banner__form {
+        gap: 10px;   
+    }
+
+    .banner__form .btn__green {
+        margin-top: 20px;
+        margin-bottom: 16px;
+    }
+
+    .saber__box {
+        position: relative;
+    }
+
+    .saber__img {
+        position: absolute;   
+        right: -5px;
+        top: -19px;
+    }
+
+    .card__card {
+        padding: 16px 12px;
+        margin-bottom: 8px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+}
+
+</style>
+
 </html>
