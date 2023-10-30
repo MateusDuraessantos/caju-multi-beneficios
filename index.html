@@ -387,15 +387,25 @@
             <div class="footer__space">
                 <img class="footer__logo" src="./src/logo.svg" alt="Logo Caju">
                 <div class="footer__icons">
-                    <img src="./src/icons/insta.svg" alt="Instagram">
-                    <img src="./src/icons/linkedin.svg" alt="LinkedIn">
-                    <img src="./src/icons/face.svg" alt="Facebook">
-                    <img src="./src/icons/youtube.svg" alt="youtube">
-                    <img src="./src/icons/x.svg" alt="X">
+                    <a href="" class="footer__links">
+                        <img src="./src/icons/insta.svg" alt="Instagram">
+                    </a>
+                    <a href="" class="footer__links">
+                        <img src="./src/icons/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="" class="footer__links">
+                        <img src="./src/icons/face.svg" alt="Facebook">
+                    </a>
+                    <a href="" class="footer__links">
+                        <img src="./src/icons/youtube.svg" alt="youtube">
+                    </a>
+                    <a href="" class="footer__links">
+                        <img src="./src/icons/x.svg" alt="X">
+                    </a>
                 </div>
             </div>
             <hr>
-            <div class="footer__space--bottom">
+            <div class="footer__space">
                 <p>Caju ® 2023. Todos os direitos reservados.</p>
                 <p class="footer__termos">Política de privacidade | Termos de Uso</p>
             </div>
@@ -552,6 +562,8 @@ button {
     border-radius: 8px;
     height: 50px;
     padding: 0 20px;
+    max-width: max-content;
+    margin: auto;
 }
 .btn__green,
 .btn__red,
@@ -635,13 +647,21 @@ header {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
     justify-items: center;
-    gap: 40px;
+    gap: 66px;
 }
 
 .banner__grafismo {
     position: absolute;
     bottom: -600px;
     left: 0;
+    height: 1222px;
+    width: 480px;
+}
+
+.banner .btn__green {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 60px;
 }
 
 .banner__form {
@@ -659,14 +679,36 @@ header {
     flex-direction: column;
 }
 
-.banner__form input {
+.banner input {
     background: white;
     padding: 20px;
+    padding-left: 15px;
     border-radius: 16px;
     height: 32px;
-    border-radius: 5px;
+    border-radius: 6px;
     margin-top: 4px;
     border: none;
+    outline: 2px solid transparent;
+    transition: .2s;
+    font-size: 16px;
+}
+
+.banner input, .banner input:focus, .banner__form input:focus::placeholder, 
+.banner input::placeholder {
+    transition: .2s;
+}
+
+.banner input::placeholder {
+    color: rgb(199, 199, 199);
+}
+
+.banner input:focus::placeholder {
+    color: red;
+}
+
+.banner input:focus {
+    color: red;
+    outline: 2px solid red;
 }
 
 .banner__disclaimer {
@@ -1034,7 +1076,7 @@ footer hr {
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .body__width {
