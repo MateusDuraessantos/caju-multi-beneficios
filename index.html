@@ -308,8 +308,6 @@
             <section class="empresa">
                 <img class="empresa__grafismo--1" src="./src/grafismos/graf-3.svg">
                 <img class="empresa__grafismo--2" src="./src/grafismos/graf-4.svg">
-
-                <div class="body__border body--orange"></div>
                 <div class="body__width">
                     <div class="empresa__grid">
                         <div class=" general--gap__texts">
@@ -888,12 +886,15 @@ header {
     position: relative;
     background: var(--orange);
     padding: 100px 0;
+    padding-top: 140px;
+    overflow: hidden;
+    border-radius: 60px 60px 0 0;
     padding-bottom: 0;
 }
 
 .empresa__grafismo--1 {
     position: absolute;
-    top: -50%;
+    top: -20%;
     left: -280px;
     z-index: 1;
 }
@@ -902,7 +903,6 @@ header {
     position: absolute;
     bottom: -42px;
     right: 0;
-    z-index: 1;
     width: 400px;
 }
 
@@ -1058,6 +1058,12 @@ footer hr {
     
     /* Empresa */
 
+    .empresa { 
+        border-radius: 30px 30px 0 0;
+        padding-bottom: 100px;
+        padding-top: 40px;
+    }
+
     .empresa__grid {
         padding: 12px;
     }
@@ -1108,8 +1114,6 @@ footer hr {
         margin-left: calc(25% - 8px);
     }
 
-  
-
     .footer__space--bottom {
         display: flex;
         flex-direction: column;
@@ -1135,13 +1139,6 @@ footer hr {
 
     .prova__border {
         border-radius: 30px 30px 0 0;
-    }
-
-    /* empresa */
-    
-    .empresa {
-        padding-bottom: 100px;
-        padding-top: 0;
     }
 
     /* RH */
@@ -1197,6 +1194,7 @@ footer hr {
 
     .saber {
         padding: 40px 0 0 0;
+        transform: translateY(-88px);
     }
 
     .saber__box--responsive {
