@@ -83,7 +83,7 @@
                         <div class="card__column">
                             <div class="card__card">
                                 <h3 class="card__percentage">
-                                    {{ contador1 }}%
+                                    63,4%
                                 </h3>
                                 <div class="card__container">
                                     <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
@@ -98,7 +98,7 @@
 
                             <div class="card__card">
                                 <h3 class="card__percentage">
-                                    {{ contador2 }}%
+                                    48%
                                 </h3>
                                 <div class="card__container">
                                     <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
@@ -113,7 +113,7 @@
 
                             <div class="card__card">
                                 <h3 class="card__percentage">
-                                    {{ contador3 }}%
+                                    80%
                                 </h3>
                                 <div class="card__container">
                                     <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
@@ -178,13 +178,13 @@
                             <hr>
 
                             <div class="box__ctn">
-                                <img src="./src/icons/eng.svg">
+                                <img src="./src/icons/target.svg">
                                 <div>
                                     <h6>
-                                        Facilidade operacional
+                                        Foco estratégico
                                     </h6>
                                     <p>
-                                        Gestão centralizada de vários benefícios em um único sistema, poupando tempo e recursos.
+                                        economia de tempo com tarefas administrativas permite que o RH se concentre em estratégias de desenvolvimento e engajamento.
                                     </p>
                                 </div>
                             </div>
@@ -192,13 +192,13 @@
                             <hr>
 
                             <div class="box__ctn">
-                                <img src="./src/icons/eng.svg">
+                                <img src="./src/icons/star.svg">
                                 <div>
                                     <h6>
-                                        Facilidade operacional
+                                        Atração de talentos
                                     </h6>
                                     <p>
-                                        Gestão centralizada de vários benefícios em um único sistema, poupando tempo e recursos.
+                                        Oferecer benefícios com mais flexibilidade aumenta a atratividade da empresa no mercado de trabalho.
                                     </p>
                                 </div>
                             </div>
@@ -215,13 +215,13 @@
 
                         <div>
                             <div class="box__ctn">
-                                <img src="./src/icons/eng.svg">
+                                <img src="./src/icons/check.svg">
                                 <div>
                                     <h6>
-                                        Facilidade operacional
+                                        Liberdade de escolha
                                     </h6>
                                     <p>
-                                        Gestão centralizada de vários benefícios em um único sistema, poupando tempo e recursos.
+                                        Possibilidade de usar os benefícios de acordo com suas preferências individuais.
                                     </p>
                                 </div>
                             </div>
@@ -229,13 +229,13 @@
                             <hr>
 
                             <div class="box__ctn">
-                                <img src="./src/icons/eng.svg">
+                                <img src="./src/icons/smile.svg">
                                 <div>
                                     <h6>
-                                        Facilidade operacional
+                                        Melhor experiência
                                     </h6>
                                     <p>
-                                        Gestão centralizada de vários benefícios em um único sistema, poupando tempo e recursos.
+                                        Benefícios flexíveis criam uma experiência mais positiva e personalizada para os colaboradores.
                                     </p>
                                 </div>
                             </div>
@@ -243,13 +243,13 @@
                             <hr>
 
                             <div class="box__ctn">
-                                <img src="./src/icons/eng.svg">
+                                <img src="./src/icons/top.svg">
                                 <div>
                                     <h6>
-                                        Facilidade operacional
+                                        Aumento de produtividade
                                     </h6>
                                     <p>
-                                        Gestão centralizada de vários benefícios em um único sistema, poupando tempo e recursos.
+                                        Colaboradores satisfeitos e valorizados tendem a ser mais produtivos.
                                     </p>
                                 </div>
                             </div>
@@ -405,7 +405,7 @@
                 </div>
             </div>
             <hr>
-            <div class="footer__space">
+            <div class="footer__diretos">
                 <p>Caju ® 2023. Todos os direitos reservados.</p>
                 <p class="footer__termos">Política de privacidade | Termos de Uso</p>
             </div>
@@ -417,9 +417,6 @@
         el: '#app',
         data(){
             return {
-                contador1: 1,
-                contador2: 1,
-                contador3: 1,
                 empresa__card: [
                     {
                         icon: 'fork',
@@ -442,57 +439,8 @@
                         text: 'Atendimento todos os dias, inclusive finais de semana e feriados'
                     },
                 ],
-                interval1: 1,
-                interval2: 1,
-                interval3: 1,
             }
         },
-        mounted() {
-            this.countPercentage1()
-            this.countPercentage2()
-            this.countPercentage3()
-        },
-        methods: {
-
-            texteScreen(entries, observer){
-                console.log(entries);
-                document.getElementById('myDiv')
-                observer.observe(target)
-                console.log(target);
-                
-            },  
-
-            countPercentage1() {
-                setTimeout(() => {
-                    if (this.contador1 < 63.4 ) {
-                        this.contador1 = parseFloat((this.contador1 + 1.1).toFixed(3))
-                        this.countPercentage1()
-                    }  
-                    else {
-                        this.contador1 = 64.4
-                    }
-                    this.interval1 *= 1.1
-                }, this.interval1);
-            },
-            countPercentage2() {
-                setTimeout(() => {
-                    if (this.contador2 < 48 ) {
-                        this.contador2 += 1
-                        this.countPercentage2()
-                    }  
-                    this.interval2 *= 1.14
-                }, this.interval2);
-            },
-            countPercentage3() {
-                setTimeout(() => {
-                    if (this.contador3 < 80 ) {
-                        this.contador3 += 1
-                        this.countPercentage3()
-                    }  
-                    this.interval3 *= 1.07
-                }, this.interval3);
-            },
-        }
     })
 </script>
 
@@ -802,6 +750,7 @@ header {
 .rh__grafismo {
     position: absolute;
     right: 0;
+    top: 240px;
 }
 
 .rh__grid {
@@ -848,9 +797,16 @@ header {
     background: var(--orange);
 }
 
+.box__orange hr{
+    border-color: #FFAB66;
+}
+
 .box__green {
     background: var(--green);
+}
 
+.box__green hr{
+    border-color: #9CE59C;
 }
 
 .rh h6 {
@@ -862,6 +818,10 @@ header {
     display: flex;
     align-items: flex-start;
     gap: 20px;
+}
+
+.box__ctn h6 {
+    margin-bottom: 10px;
 }
 
 .box__text {
@@ -1041,6 +1001,7 @@ footer {
     gap: 20px;
     padding: 20px 40px;
     font-weight: 500;
+    font-size: 16px;
 }
 
 footer hr {
@@ -1053,7 +1014,7 @@ footer hr {
     height: 26px;
 }
 
-.footer__space {
+.footer__space, .footer__diretos {
     display: flex;
     justify-content: space-between;
 }
@@ -1083,7 +1044,7 @@ footer hr {
         width: calc(100% - 20px);
     }
 
-    .saber__grid, .banner__grid, .card__grid, .rh__box, .empresa__grid, .prova__grid, .rh__grid {
+    .saber__grid, .banner__grid, .card__grid, .rh__box, .empresa__grid, .prova__grid {
         grid-template-columns: 1fr;
     }
 
@@ -1185,6 +1146,15 @@ footer hr {
 
     /* RH */
 
+    .rh {
+        padding-top: 40px;
+    }
+
+    .rh__grid {
+        gap: 34px;
+        align-items: center;
+    }
+
     .rh__box hr {
         margin: 20px 0;
     }
@@ -1202,7 +1172,7 @@ footer hr {
         display: flex;
         align-items: center;
         gap: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 32px;
     }
 
     .rh__box--responsive img {
@@ -1217,10 +1187,6 @@ footer hr {
     .rh__ctn--img {
         display: flex;
         justify-content: center;
-    }
-
-    .rh__grid {
-        gap: 34px;
     }
 
     .rh__img {
@@ -1250,7 +1216,24 @@ footer hr {
     }
 }
 
+@media only screen and (max-width: 800px) {
+
+    .rh__grid {
+        grid-template-columns: 1fr;
+        height: initial;
+        padding-bottom: 40px;
+    }
+
+    .rh__img {
+        position: initial;
+        width: calc(100% - 40px);
+    }
+
+}
+
 @media only screen and (max-width: 500px) {
+
+    /* header */
 
     header {
         height: 60px;
@@ -1269,8 +1252,23 @@ footer hr {
         margin-bottom: 16px;
     }
 
+    /* RH */
+
+    p {
+        font-size: 14px;
+    }
+
+    .box__ctn p, .saber__description {
+        font-size: 14px;
+    }
+
+    /*  */
+
+
     .saber__box {
         position: relative;
+        padding: 30px;
+        border-radius: 24px;
     }
 
     .saber__img {
@@ -1286,8 +1284,13 @@ footer hr {
 
     footer {
         padding: 20px;
+        font-size: 14px;
     }
 
+    .footer__diretos {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 </style>
