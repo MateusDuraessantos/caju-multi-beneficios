@@ -6,444 +6,624 @@
     <title>Caju - Multi Benefícios Visa</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="imagex/png" href="./src/logoaba.svg">
-
-    <!-- VueJs -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <!-- Link provisório: https://caju-multi-beneficios-visa.web.app/ -->
+
+        <!-- Google Tag Manager (parte do head) -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-MSKBQ9FX');</script>
+            <!-- Fim do Google Tag Manager (parte do head) -->
+
 </head>
 
 <body>
-   <div id="app">
-        <header>
-            <img class="header__img" src="./src/logo.svg" alt="Logo">
-        </header>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSKBQ9FX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- Fim do Google Tag Manager (noscript) -->
 
-        <main>
-            <section class="banner">
-                <img class="banner__grafismo" src="./src/grafismos/graf-1.svg" alt="grafismo">
+    <!-- Meta Pixel Code do Facebook -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '7360381497366216');
+        fbq('track', 'PageView');
+    </script>
+
+    <header>
+        <img class="header__img" src="./src/logo.svg" alt="Logo">
+    </header>
+
+    <main>
+        <section class="banner">
+            <img class="banner__grafismo" src="./src/grafismos/graf-1.svg" alt="grafismo">
+            
+            <div class="body__width">
+                <div class="banner__grid">
+                    <div class="general--gap__texts">
+                        <h1>
+                            Multibenefícios: o que são e quais as vantagens de oferecer para os seus colaboradores
+                        </h1>
+                        <p>
+                            Multibenefícios são uma inovação na forma como as empresas fazem a gestão de benefícios para seus colaboradores.
+                        </p>
+                        <p>
+                            Ao oferecer uma variedade maior de opções personalizadas, desde vale-alimentação até incentivo à cultura, as <strong>empresas estão reconhecendo a importância de se adaptarem para levarem mais flexibilidade e liberdade para os colaboradores.</strong>
+                        </p>
+                    </div>
+
+                    <noscript>
+                        <img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=7360381497366216&ev=PageView&noscript=1" />
+                    </noscript>
+
+                    <!-- End Meta Pixel Code do Facebook -->
+                    
+                    <div class="forms">
+                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
                 
-                <div class="body__width">
-                    <div class="banner__grid">
-                        <div class="general--gap__texts">
-                            <h1>
-                                Multibenefícios: o que são e quais as vantagens de oferecer para os seus colaboradores
-                            </h1>
-                            <p>
-                                Multibenefícios são uma inovação na forma como as empresas fazem a gestão de benefícios para seus colaboradores.
-                            </p>
-                            <p>
-                                Ao oferecer uma variedade maior de opções personalizadas, desde vale-alimentação até incentivo à cultura, as <strong>empresas estão reconhecendo a importância de se adaptarem para levarem mais flexibilidade e liberdade para os colaboradores.</strong>
-                            </p>
+                        <div class="forms__topoform">
+                            Preencha o formulário <br> para baixar o nosso e-book gratuito
                         </div>
-                        <div class="banner__form">
-                            <div class="inputs__container">
-                                <label for="">Nome é seu nome?</label>
-                                <input type="text" placeholder="Digite aqui">
+                        
+                        <div class="forms__ctn">
+                            <label for="nome">Qual é o seu nome?</label>
+                            <input class="forms__input" type="text" id="nome" name="nome" required >
+                        </div>
+                
+                        <div class="forms__ctn">
+                            <label for="empresa">Qual é a sua empresa?</label>
+                            <input class="forms__input" type="text" id="empresa" name="empresa" required >
+                        </div>
+                
+                        <div class="forms__ctn">
+                            <label for="cargo__select">Qual é o seu cargo?</label>
+                            <div class="seletor">
+                                <select id="cargo__select" name="cargo" required class="forms__select">
+                                    <option value="" disabled  selected></option>
+                                    <option value="Estagiário">Estagiário</option>
+                                    <option value="Assistente">Assistente</option>
+                                    <option value="Analista">Analista</option>
+                                    <option value="Coordenador/gerente">Coordenador/gerente</option>
+                                    <option value="Sócio/Diretor">Sócio/Diretor</option>
+                                </select>
                             </div>
-                            <div class="inputs__container">
-                                <label for="">Qual sua empresa?</label>
-                                <input type="text" placeholder="Digite aqui">
+                        </div>
+                
+                        <div class="forms__ctn">
+                            <label for="email">Qual é o seu email?</label>
+                            <input class="forms__input" type="email" id="email" name="email" required>
+                        </div>
+                
+                        <div class="forms__ctn">
+                            <label for="area__select">Em qual área você trabalha?</label>
+                            <div class="seletor">
+                                <select id="area__select" name="area" required class="forms__select">
+                                    <option value="" disabled selected></option>
+                                    <option value="RH">RH</option>
+                                    <option value="Compras">Compras</option>
+                                    <option value="Financeiro/Contabilidade">Financeiro/Contabilidade</option>
+                                    <option value="Administrativo">Administrativo</option>
+                                    <option value="Outros">Outros</option>
+                                </select>
                             </div>
-                            <div class="inputs__container">
-                                <label for="">Qual seu cargo?</label>
-                                <input type="text" placeholder="Digite aqui">
+                        </div>
+                
+                        <div class="forms__ctn">
+                            <label for="num_funcionarios">Quantos funcionários tem a sua empresa?</label>
+                            <input class="forms__input" type="text" id="num_funcionarios" name="num_funcionarios" required >
+                        </div>
+                        
+                
+                        <div class="forms__ctn">
+                            <label for="desafio_empresa__select">Qual é o seu maior desafio?</label>
+                            <div class="seletor">
+                                <select id="desafio_empresa__select" name="desafio_empresa" required class="forms__select">
+                                    <option value=""  disabled selected></option>
+                                    <option value="Atração e seleção">Atração e seleção</option>
+                                    <option value="Retenção de colaboradores">Retenção de colaboradores</option>
+                                    <option value="Desenvolvimento e treinamento">Desenvolvimento e treinamento</option>
+                                    <option value="Plano de carreira">Plano de carreira</option>
+                                    <option value="Cultura corporativa">Cultura corporativa</option>
+                                    <option value="Reduzir os custos com RH">Reduzir os custos com RH</option>
+                                    <option value="Otimizar o tempo do meu time de RH">Otimizar o tempo do meu time de RH</option>
+                                </select>
                             </div>
-                            <div class="inputs__container">
-                                <label for="">Qual seu email?</label>
-                                <input type="text" placeholder="Digite aqui">
-                            </div>
-                            <div class="inputs__container">
-                                <label for="">Em qual área você trabalha?</label>
-                                <input type="text" placeholder="Digite aqui">
-                            </div>
-                            <div class="inputs__container">
-                                <label for="">Quantos funcionários tem a sua empresa?</label>
-                                <input type="text" placeholder="Digite aqui">
-                            </div>
-                            <div class="inputs__container">
-                                <label for="">Qual seu maior desafio?</label>
-                                <input type="text" placeholder="Digite aqui">
-                            </div>
-                            <div class="inputs__container">
-                                <label for="">Qual seu telefone?</label>
-                                <input type="text" placeholder="Digite aqui">
-                            </div>
+                        </div>
+                
+                        <div class="forms__ctn">
+                            <label for="telefone">Qual é o seu telefone?</label>
+                            <input class="forms__input" type="tel" id="telefone" name="telefone" required >
+                        </div>
+                        
+                        <div class="forms__button--container">
+                            <input class="forms__sc-button" data-hash="003/001-001.059:018;001" type="submit" value="Quero baixar" id="submitButton">
+                        </div>
 
-                            <button class="btn__green">Quero saber mais</button>
-                            <p class="banner__disclaimer">
-                                A Caju precisa dos seus dados para enviar informações sobre produtos e serviços, além de conteúdos que podem te interessar. Você pode deixar de receber essas comunicações quando quiser. Para obter mais informações, veja nossa Política de Privacidade.
-                            </p>
+                        <p class="forms__disclaimer">
+                            A Caju precisa dos seus dados para enviar informações sobre produtos e serviços, além de conteúdos que podem te interessar. Você pode deixar de receber essas comunicações quando quiser. Para obter mais informações, veja nossa Política de Privacidade.
+                        </p> 
+                    </div>
+                    
+                    <!-- Google Tag Manager (evento de clique no botão) -->
+                    <script>
+                        document.getElementById("submitButton").addEventListener("click", function () {
+                            // Registre o evento de clique no botão "Quero baixar"
+                            dataLayer.push({
+                                'event': 'formSubmission',
+                                'formType': 'Webinar Engajamento colaborador'
+                            });
+                        });
+
+                        // Função para obter parâmetros UTM da URL
+                        function getUTMParameters() {
+                            const urlParams = new URLSearchParams(window.location.search);
+                            const utmParameters = {};
+            
+                            utmParameters['str_utm_source'] = urlParams.get('utm_source') || '';
+                            utmParameters['str_utm_medium'] = urlParams.get('utm_medium') || '';
+                            utmParameters['str_utm_campaign'] = urlParams.get('utm_campaign') || '';
+                            utmParameters['str_utm_term'] = urlParams.get('utm_term') || '';
+            
+                            return utmParameters;
+                        }
+            
+                        var tel = function (val) {
+                            return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 00000-0009';
+                        };
+            
+                        var options = {
+                            onKeyPress: function (val, e, field, options) {
+                                field.mask(tel.apply({}, arguments), options);
+                            }
+                        };
+            
+                        $('#telefone').mask(tel, options);
+                        var botaoEnviar = document.getElementById("submitButton");
+                        botaoEnviar.addEventListener("click", function (e) {
+                            e.preventDefault();
+            
+                            const nome = document.getElementById('nome').value;
+                            const empresa = document.getElementById('empresa').value;
+                            const cargo = document.getElementById('cargo__select').value;
+                            const area = document.getElementById('area__select').value;
+                            const num_funcionarios = document.getElementById('num_funcionarios').value;
+                            const telefone = document.getElementById('telefone').value;
+                            const desafio_empresa = document.getElementById('desafio_empresa__select').value;
+                            const email = document.getElementById('email').value;
+            
+                            // Obter parâmetros UTM da URL
+                            const utmParameters = getUTMParameters();
+            
+                            const telLimpo = telefone.replace(/\D/g, '');
+                            const telCompleto = '55' + telLimpo;
+            
+                            // Obter a data e hora atual
+                            let dataHoraAtual = new Date();
+            
+                            // Formatar a data e hora no padrão brasileiro
+                            let dataHoraFormatada = new Date().toLocaleString('pt-BR');
+            
+                            if (
+                                nome === "" ||
+                                nome === undefined ||
+                                empresa === "" ||
+                                empresa === undefined ||
+                                cargo === "" ||
+                                cargo === undefined ||
+                                area === "" ||
+                                area === undefined ||
+                                telefone === "" ||
+                                telefone === undefined ||
+                                num_funcionarios === "" ||
+                                num_funcionarios === undefined ||
+                                desafio_empresa === ""
+                            ) {
+                                alert('Preencha todos os campos.');
+                            } else {
+                                // Mesclar os parâmetros UTM com os outros dados
+                                const data = JSON.stringify({
+                                    str_lp_name: "Ebook tendências Benefícios",
+                                    str_user_name: nome,
+                                    str_company_name: empresa,
+                                    str_email: email,
+                                    str_business_unit: area,
+                                    str_form_job: cargo,
+                                    str_user_challenge: desafio_empresa,
+                                    nr_phone: telCompleto,
+                                    dt_created_date: dataHoraFormatada,
+                                    str_employees_number: num_funcionarios,
+                                    ...utmParameters // Inclui os parâmetros UTM mapeados corretamente
+                                });
+            
+                                fetch("https://cloud.fala.caju.com.br/79490316949496", { method: 'POST', body: data })
+                                        .then((response) => response.json())
+                                    .then((resposta) => {
+                                        if (resposta.statusCode === 200) {
+                                        dataLayer.push({'event': '003/001-001.059:018;001'});
+                                            window.location.href = "http://cloud.fala.caju.com.br/obrigado";
+                                            
+                                        } else {
+                                            alert('Erro ao inserir dados.');
+                                        }
+                                    });
+                            }
+                        });
+                    </script>
+                    </div>
+
+
+
+                    
+
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="card" id="myDiv">
+            <img class="card__grafismo" src="./src/grafismos/graf-5.svg" alt="Grafismo">
+            <div class="body__width">
+                <div class="card__grid">
+                    <div class="card__column">
+                        <div class="card__card">
+                            <h3 class="card__percentage">
+                                63,4%
+                            </h3>
+                            <div class="card__container">
+                                <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
+                                <p class="card__description--responsive">
+                                    dos colaboradores afirmam dar tanta importância ao pacote de benefícios quanto ao salário.
+                                </p>
+                                <p class="card__disclaimer">
+                                    Fonte: Robert Half
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card__card">
+                            <h3 class="card__percentage">
+                                48%
+                            </h3>
+                            <div class="card__container">
+                                <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
+                                <p class="card__description--responsive">
+                                    das empresas pensam em oferecer um pacote de benefícios mais flexíveis diante do aumento do turnover e dos desafios econômicos do país
+                                </p>
+                                <p class="card__disclaimer">
+                                    Fonte: Pesquisa de Remuneração Total 2022
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card__card">
+                            <h3 class="card__percentage">
+                                80%
+                            </h3>
+                            <div class="card__container">
+                                <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
+                                <p class="card__description--responsive">
+                                    das empresas tiveram um aumento de produtividade com um programa de benefícios mais flexível.
+                                </p>
+                                <p class="card__disclaimer">
+                                    Fonte: International Workplace Group
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <img class="card__img" src="./src/card.svg" alt="Cartão caju">
+                </div>
+
+                <div class="general--container__button"><button class="btn__red">Conheça Caju Multibenefícios</button></div>
+
+            </div>
+        </section>
+
+        <section class="rh">
+            <img class="rh__grafismo" src="./src/grafismos/graf-2.svg">
+            <div class="body__width">
+                <div class="rh__grid">
+                    <div class="rh__ctn--img"><img class="rh__img" src="./src/Imagem-visa.png"></div>
+                    <div>
+                        <h1>
+                            Bom pro colaborador, <br> bom pro RH
+                        </h1>
+                        <br>
+                        <p>
+                            Oferecer multibenefícios traz uma série de vantagens tanto para o RH quanto para os colaboradores:
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rh__box box__orange">
+                    <div class="rh__box--responsive">
+                        <img src="./src/heart.svg">
+                        <p class="rh__title">
+                            Para o RH
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="box__ctn">
+                            <img src="./src/icons/eng.svg">
+                            <div>
+                                <h6>
+                                    Facilidade operacional
+                                </h6>
+                                <p>
+                                    Gestão centralizada de vários benefícios em um único sistema, poupando tempo e recursos.
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="box__ctn">
+                            <img src="./src/icons/target.svg">
+                            <div>
+                                <h6>
+                                    Foco estratégico
+                                </h6>
+                                <p>
+                                    economia de tempo com tarefas administrativas permite que o RH se concentre em estratégias de desenvolvimento e engajamento.
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="box__ctn">
+                            <img src="./src/icons/star.svg">
+                            <div>
+                                <h6>
+                                    Atração de talentos
+                                </h6>
+                                <p>
+                                    Oferecer benefícios com mais flexibilidade aumenta a atratividade da empresa no mercado de trabalho.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <section class="card" id="myDiv">
-                <img class="card__grafismo" src="./src/grafismos/graf-5.svg" alt="Grafismo">
-                <div class="body__width">
-                    <div class="card__grid">
-                        <div class="card__column">
-                            <div class="card__card">
-                                <h3 class="card__percentage">
-                                    63,4%
-                                </h3>
-                                <div class="card__container">
-                                    <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
-                                    <p class="card__description--responsive">
-                                        dos colaboradores afirmam dar tanta importância ao pacote de benefícios quanto ao salário.
-                                    </p>
-                                    <p class="card__disclaimer">
-                                        Fonte: Robert Half
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="card__card">
-                                <h3 class="card__percentage">
-                                    48%
-                                </h3>
-                                <div class="card__container">
-                                    <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
-                                    <p class="card__description--responsive">
-                                        das empresas pensam em oferecer um pacote de benefícios mais flexíveis diante do aumento do turnover e dos desafios econômicos do país
-                                    </p>
-                                    <p class="card__disclaimer">
-                                        Fonte: Pesquisa de Remuneração Total 2022
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="card__card">
-                                <h3 class="card__percentage">
-                                    80%
-                                </h3>
-                                <div class="card__container">
-                                    <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
-                                    <p class="card__description--responsive">
-                                        das empresas tiveram um aumento de produtividade com um programa de benefícios mais flexível.
-                                    </p>
-                                    <p class="card__disclaimer">
-                                        Fonte: International Workplace Group
-                                    </p>
-                                </div>
-                            </div>
-
-
-
-
-                        </div>
-                        <img class="card__img" src="./src/card.svg" alt="Cartão caju">
+                <div class="rh__box box__green">
+                    <div class="rh__box--responsive">
+                        <img src="./src/person.svg">
+                        <p class="rh__title">
+                            Para o RH
+                        </p>
                     </div>
 
-                    <div class="general--container__button"><button class="btn__red">Conheça Caju Multibenefícios</button></div>
+                    <div>
+                        <div class="box__ctn">
+                            <img src="./src/icons/check.svg">
+                            <div>
+                                <h6>
+                                    Liberdade de escolha
+                                </h6>
+                                <p>
+                                    Possibilidade de usar os benefícios de acordo com suas preferências individuais.
+                                </p>
+                            </div>
+                        </div>
 
+                        <hr>
+
+                        <div class="box__ctn">
+                            <img src="./src/icons/smile.svg">
+                            <div>
+                                <h6>
+                                    Melhor experiência
+                                </h6>
+                                <p>
+                                    Benefícios flexíveis criam uma experiência mais positiva e personalizada para os colaboradores.
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="box__ctn">
+                            <img src="./src/icons/top.svg">
+                            <div>
+                                <h6>
+                                    Aumento de produtividade
+                                </h6>
+                                <p>
+                                    Colaboradores satisfeitos e valorizados tendem a ser mais produtivos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
 
-            <section class="rh">
-                <img class="rh__grafismo" src="./src/grafismos/graf-2.svg">
+                <div class="general--container__button">
+                    <button class="btn__green">Leve Caju para sua empresa!</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="saber">
+            <div class="body__width">
+                <h1>
+                    Quer saber mais?
+                </h1>
+
+                <div class="saber__grid">
+                    <div class="saber__box saber--red">
+                        <div class="saber__box--responsive">
+                            <img src="./src/carteira.svg" class="saber__img">
+                            <h4 class="saber__h4">O que é um cartão <br> multibenefícios e como <br> funciona?</h4>
+                        </div>
+                        <p class="saber__description">Saiba como um cartão multibenefícios facilita a gestão de diferentes categorias de benefícios.</p>
+                        <button class="saber-btn__green">Confira as vantagens!</button>
+                    </div>
+                    <div class="saber__box saber--orange">
+                        <div class="saber__box--responsive">
+                            <img src="./src/premio.svg" class="saber__img">
+                            <h4 class="saber__h4">4 soluções da Caju <br> para atração e <br> retenção de talentos</h4>
+                        </div>
+                        <p class="saber__description">Descubra como a Caju pode te ajudar a impulsionar sua estratégia de atração e retenção de talentos com soluções descomplicadas e poderosas.</p>
+                        <button class="saber-btn__red">Saiba mais!</button>
+                    </div>
+                    <div class="saber__box saber--green">
+                        <div class="saber__box--responsive">
+                            <img src="./src/docs.svg" class="saber__img">
+                            <h4 class="saber__h4">O que é política de benefícios, <br> suas vantagens e como <br> implementar na sua empresa</h4>
+                        </div>
+                        <p class="saber__description">Entenda qual é a importância de construir uma política de benefícios na sua empresa e aprenda o passo a passo para criá-la.</p>
+                        <button class="saber-btn__red">Descubra agora!</button>
+                    </div>
+                    <div class="saber__box saber--yellow">
+                        <div class="saber__box--responsive">
+                            <img src="./src/cartao-person.svg" class="saber__img">
+                            <h4 class="saber__h4">Vale-refeição e vale-alimentação: o que é, <br> principais diferenças e como oferecer <br> esses benefícios aos seus colaboradores</h4>
+                        </div>
+                        <p class="saber__description">Saiba quais são as principais diferenças e vantagens entre vale-alimentação e vale-refeição.</p>
+                        <button class="saber-btn__red">Confira mais!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="empresa">
+            <img class="empresa__grafismo--1" src="./src/grafismos/graf-3.svg">
+            <img class="empresa__grafismo--2" src="./src/grafismos/graf-4.svg">
+            <div class="body__width">
+                <div class="empresa__grid">
+                    <div class=" general--gap__texts">
+                        <h1>
+                            Sua empresa de acordo com as necessidades atuais
+                        </h1>
+                        <p>
+                            Oferecer multibenefícios tem se tornado cada vez mais uma <strong>ação altamente competitiva para as empresas que buscam atender às demandas dinâmicas do mercado</strong> e às expectativas em constante evolução de seus colaboradores.
+                        </p>
+                        <p>
+                            Se hoje já inovamos o modelo tradicional de trabalho, não tem porque os benefícios da sua empresa ficarem presos ao passado.
+                            <strong> A Caju tem multibenefícios que deixam todo tipo de empresa mais leve:</strong>
+                        </p>
+                    </div>
+                    <div>
+                        <div class="empresa__card">
+                            <img src="./src/icons/fork.svg">
+                            <p>Até 8 categorias de benefícios em um único cartão</p>
+                        </div>
+
+                        <div class="empresa__card">
+                            <img src="./src/icons/loja.svg">
+                            <p>Bandeira Visa - aceita em mais de 2 milhões de estabelecimentos</p>
+                        </div>
+
+                        <div class="empresa__card">
+                            <img src="./src/icons/gear.svg">
+                            <p>Gestão centralizada de todos os benefícios</p>
+                        </div>
+
+                        <div class="empresa__card">
+                            <img src="./src/icons/lock.svg">
+                            <p>Toda segurança jurídica para os benefícios seguindo os padrões da CLT</p>
+                        </div>
+
+                        <div class="empresa__card">
+                            <img src="./src/icons/phone.svg">
+                            <p>Atendimento todos os dias, inclusive finais de semana e feriados</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="empresa__grid">
+
+                    <img class="empresa__img" src="./src/person-card.png">
+
+                    <div class="gap__texts general--gap__texts">
+                        <h1>Quer saber como Caju Multibenefícios funciona na prática? </h1>
+                        
+                        <p>Receba um vídeo de demonstração e entenda como a Caju pode ajudar o seu RH a ter mais agilidade e os seus colaboradores mais flexibilidade.</p>
+                        
+                        <button class="btn__red">Conheça Caju Multibenefícios</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prova">
+            <div class="prova__border">
                 <div class="body__width">
-                    <div class="rh__grid">
-                        <div class="rh__ctn--img"><img class="rh__img" src="./src/Imagem-visa.png"></div>
-                        <div>
-                            <h1>
-                                Bom pro colaborador, <br> bom pro RH
-                            </h1>
-                            <br>
-                            <p>
-                                Oferecer multibenefícios traz uma série de vantagens tanto para o RH quanto para os colaboradores:
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="rh__box box__orange">
-                        <div class="rh__box--responsive">
-                            <img src="./src/heart.svg">
-                            <p class="rh__title">
-                                Para o RH
-                            </p>
-                        </div>
-
-                        <div>
-                            <div class="box__ctn">
-                                <img src="./src/icons/eng.svg">
-                                <div>
-                                    <h6>
-                                        Facilidade operacional
-                                    </h6>
-                                    <p>
-                                        Gestão centralizada de vários benefícios em um único sistema, poupando tempo e recursos.
-                                    </p>
-                                </div>
+                    <div class="prova__grid">
+                        <div class="prova__container--cards">
+                            <div class="prova__card">
+                                <img class="prova__img" src="./src/olist.png">
+                                <p>
+                                    Como o Olist subiu 7% em seu eNPS promovendo melhorias nos benefícios corporativos.
+                                </p>
                             </div>
-
-                            <hr>
-
-                            <div class="box__ctn">
-                                <img src="./src/icons/target.svg">
-                                <div>
-                                    <h6>
-                                        Foco estratégico
-                                    </h6>
-                                    <p>
-                                        economia de tempo com tarefas administrativas permite que o RH se concentre em estratégias de desenvolvimento e engajamento.
-                                    </p>
-                                </div>
+                            <div class="prova__card">
+                                <img class="prova__img" src="./src/loft.png">
+                                <p>
+                                    Loft implementa pacote de multibenefícios da Caju durante a pandemia.
+                                </p>
                             </div>
-
-                            <hr>
-
-                            <div class="box__ctn">
-                                <img src="./src/icons/star.svg">
-                                <div>
-                                    <h6>
-                                        Atração de talentos
-                                    </h6>
-                                    <p>
-                                        Oferecer benefícios com mais flexibilidade aumenta a atratividade da empresa no mercado de trabalho.
-                                    </p>
-                                </div>
+                            <div class="prova__card">
+                                <img class="prova__img" src="./src/bt_creditos.png">
+                                <p>
+                                    Como a BT Créditos otimizou pagamento de benefícios com a Caju.
+                                </p>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="rh__box box__green">
-                        <div class="rh__box--responsive">
-                            <img src="./src/person.svg">
-                            <p class="rh__title">
-                                Para o RH
-                            </p>
-                        </div>
-
-                        <div>
-                            <div class="box__ctn">
-                                <img src="./src/icons/check.svg">
-                                <div>
-                                    <h6>
-                                        Liberdade de escolha
-                                    </h6>
-                                    <p>
-                                        Possibilidade de usar os benefícios de acordo com suas preferências individuais.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <hr>
-
-                            <div class="box__ctn">
-                                <img src="./src/icons/smile.svg">
-                                <div>
-                                    <h6>
-                                        Melhor experiência
-                                    </h6>
-                                    <p>
-                                        Benefícios flexíveis criam uma experiência mais positiva e personalizada para os colaboradores.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <hr>
-
-                            <div class="box__ctn">
-                                <img src="./src/icons/top.svg">
-                                <div>
-                                    <h6>
-                                        Aumento de produtividade
-                                    </h6>
-                                    <p>
-                                        Colaboradores satisfeitos e valorizados tendem a ser mais produtivos.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                        <iframe class="prova__iframe" src="https://www.youtube.com/embed/5ZwpJdSTp8s?si=Mx6ccgzr4DozhxzO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
 
                     <div class="general--container__button">
-                        <button class="btn__green">Leve Caju para sua empresa!</button>
+                        <button class="btn__red">Leve Caju para sua empresa!</button>
                     </div>
-                </div>
-            </section>
-
-            <section class="saber">
-                <div class="body__width">
-                    <h1>
-                        Quer saber mais?
-                    </h1>
-
-                    <div class="saber__grid">
-                        <div class="saber__box saber--red">
-                            <div class="saber__box--responsive">
-                                <img src="./src/carteira.svg" class="saber__img">
-                                <h4 class="saber__h4">O que é um cartão <br> multibenefícios e como <br> funciona?</h4>
-                            </div>
-                            <p class="saber__description">Saiba como um cartão multibenefícios facilita a gestão de diferentes categorias de benefícios.</p>
-                            <button class="saber-btn__green">Confira as vantagens!</button>
-                        </div>
-                        <div class="saber__box saber--orange">
-                            <div class="saber__box--responsive">
-                                <img src="./src/premio.svg" class="saber__img">
-                                <h4 class="saber__h4">4 soluções da Caju <br> para atração e <br> retenção de talentos</h4>
-                            </div>
-                            <p class="saber__description">Descubra como a Caju pode te ajudar a impulsionar sua estratégia de atração e retenção de talentos com soluções descomplicadas e poderosas.</p>
-                            <button class="saber-btn__red">Saiba mais!</button>
-                        </div>
-                        <div class="saber__box saber--green">
-                            <div class="saber__box--responsive">
-                                <img src="./src/docs.svg" class="saber__img">
-                                <h4 class="saber__h4">O que é política de benefícios, <br> suas vantagens e como <br> implementar na sua empresa</h4>
-                            </div>
-                            <p class="saber__description">Entenda qual é a importância de construir uma política de benefícios na sua empresa e aprenda o passo a passo para criá-la.</p>
-                            <button class="saber-btn__red">Descubra agora!</button>
-                        </div>
-                        <div class="saber__box saber--yellow">
-                            <div class="saber__box--responsive">
-                                <img src="./src/cartao-person.svg" class="saber__img">
-                                <h4 class="saber__h4">Vale-refeição e vale-alimentação: o que é, <br> principais diferenças e como oferecer <br> esses benefícios aos seus colaboradores</h4>
-                            </div>
-                            <p class="saber__description">Saiba quais são as principais diferenças e vantagens entre vale-alimentação e vale-refeição.</p>
-                            <button class="saber-btn__red">Confira mais!</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="empresa">
-                <img class="empresa__grafismo--1" src="./src/grafismos/graf-3.svg">
-                <img class="empresa__grafismo--2" src="./src/grafismos/graf-4.svg">
-                <div class="body__width">
-                    <div class="empresa__grid">
-                        <div class=" general--gap__texts">
-                            <h1>
-                                Sua empresa de acordo com as necessidades atuais
-                            </h1>
-                            <p>
-                                Oferecer multibenefícios tem se tornado cada vez mais uma <strong>ação altamente competitiva para as empresas que buscam atender às demandas dinâmicas do mercado</strong> e às expectativas em constante evolução de seus colaboradores.
-                            </p>
-                            <p>
-                                Se hoje já inovamos o modelo tradicional de trabalho, não tem porque os benefícios da sua empresa ficarem presos ao passado.
-                                <strong> A Caju tem multibenefícios que deixam todo tipo de empresa mais leve:</strong>
-                            </p>
-                        </div>
-                        <div>
-
-                            <div class="empresa__card" v-for="card in empresa__card">
-                                <img :src="`./src/icons/` + card.icon + '.svg' ">
-                                <p>{{ card.text }}</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="empresa__grid">
-
-                        <img class="empresa__img" src="./src/person-card.png">
-
-                        <div class="gap__texts general--gap__texts">
-                            <h1>Quer saber como Caju Multibenefícios funciona na prática? </h1>
-                            
-                            <p>Receba um vídeo de demonstração e entenda como a Caju pode ajudar o seu RH a ter mais agilidade e os seus colaboradores mais flexibilidade.</p>
-                            
-                            <button class="btn__red">Conheça Caju Multibenefícios</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="prova">
-                <div class="prova__border">
-                    <div class="body__width">
-                        <div class="prova__grid">
-                            <div class="prova__container--cards">
-                                <div class="prova__card">
-                                    <img class="prova__img" src="./src/olist.png">
-                                    <p>
-                                        Como o Olist subiu 7% em seu eNPS promovendo melhorias nos benefícios corporativos.
-                                    </p>
-                                </div>
-                                <div class="prova__card">
-                                    <img class="prova__img" src="./src/loft.png">
-                                    <p>
-                                        Loft implementa pacote de multibenefícios da Caju durante a pandemia.
-                                    </p>
-                                </div>
-                                <div class="prova__card">
-                                    <img class="prova__img" src="./src/bt_creditos.png">
-                                    <p>
-                                        Como a BT Créditos otimizou pagamento de benefícios com a Caju.
-                                    </p>
-                                </div>
-                            </div>
-                            <iframe class="prova__iframe" src="https://www.youtube.com/embed/5ZwpJdSTp8s?si=Mx6ccgzr4DozhxzO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-    
-                        <div class="general--container__button">
-                            <button class="btn__red">Leve Caju para sua empresa!</button>
-                        </div>
-                    </div>
-                </div>
-            </section> 
-        </main>
-
-        <footer>
-            <div class="footer__space">
-                <img class="footer__logo" src="./src/logo.svg" alt="Logo Caju">
-                <div class="footer__icons">
-                    <a href="" class="footer__links">
-                        <img src="./src/icons/insta.svg" alt="Instagram">
-                    </a>
-                    <a href="" class="footer__links">
-                        <img src="./src/icons/linkedin.svg" alt="LinkedIn">
-                    </a>
-                    <a href="" class="footer__links">
-                        <img src="./src/icons/face.svg" alt="Facebook">
-                    </a>
-                    <a href="" class="footer__links">
-                        <img src="./src/icons/youtube.svg" alt="youtube">
-                    </a>
-                    <a href="" class="footer__links">
-                        <img src="./src/icons/x.svg" alt="X">
-                    </a>
                 </div>
             </div>
-            <hr>
-            <div class="footer__diretos">
-                <p>Caju ® 2023. Todos os direitos reservados.</p>
-                <p class="footer__termos">Política de privacidade | Termos de Uso</p>
+        </section> 
+    </main>
+
+    <footer>
+        <div class="footer__space">
+            <img class="footer__logo" src="./src/logo.svg" alt="Logo Caju">
+            <div class="footer__icons">
+                <a href="" class="footer__links">
+                    <img src="./src/icons/insta.svg" alt="Instagram">
+                </a>
+                <a href="" class="footer__links">
+                    <img src="./src/icons/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="" class="footer__links">
+                    <img src="./src/icons/face.svg" alt="Facebook">
+                </a>
+                <a href="" class="footer__links">
+                    <img src="./src/icons/youtube.svg" alt="youtube">
+                </a>
+                <a href="" class="footer__links">
+                    <img src="./src/icons/x.svg" alt="X">
+                </a>
             </div>
-        </footer>
-   </div>
+        </div>
+        <hr>
+        <div class="footer__diretos">
+            <p>Caju ® 2023. Todos os direitos reservados.</p>
+            <p class="footer__termos">Política de privacidade | Termos de Uso</p>
+        </div>
+    </footer>
 </body>
-<script>
-    new Vue({
-        el: '#app',
-        data(){
-            return {
-                empresa__card: [
-                    {
-                        icon: 'fork',
-                        text: 'Até 8 categorias de benefícios em um único cartão'
-                    },
-                    {
-                        icon: 'loja',
-                        text: 'Bandeira Visa - aceita em mais de 2 milhões de estabelecimentos'
-                    },
-                    {
-                        icon: 'gear',
-                        text: 'Gestão centralizada de todos os benefícios'
-                    },
-                    {
-                        icon: 'lock',
-                        text: 'Toda segurança jurídica para os benefícios seguindo os padrões da CLT'
-                    },
-                    {
-                        icon: 'phone',
-                        text: 'Atendimento todos os dias, inclusive finais de semana e feriados'
-                    },
-                ],
-            }
-        },
-    })
-</script>
-
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -612,54 +792,135 @@ header {
     padding: 0 60px;
 }
 
-.banner__form {
+/* Formulário */
+
+.forms {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background: var(--orange);
+    margin: 0 auto;
     padding: 20px;
-    height: max-content;
-    border-radius: 16px;
+    border-radius: 10px;
+    background-color: #FF7500;
 }
 
-.inputs__container {
-    display: flex;
-    flex-direction: column;
+.forms__topoform {
+    text-align:center;
+    font-size:22px;
+    padding:20px 0px;
+    color:#fff;
+    font-weight:600;
+    border-radius:20px 20px 0px 0px
 }
 
-.banner input {
+
+.forms__group {
+    margin-bottom: 10px;
+}
+
+
+.forms__input, .forms__select {
     background: white;
-    padding: 20px;
     padding-left: 15px;
     border-radius: 16px;
-    height: 32px;
+    height: 40px;
+    width: 100%;
     border-radius: 6px;
-    margin-top: 4px;
     border: none;
     outline: 2px solid transparent;
     transition: .2s;
     font-size: 16px;
 }
 
-.banner input, .banner input:focus, .banner__form input:focus::placeholder, 
-.banner input::placeholder {
-    transition: .2s;
-}
-
-.banner input::placeholder {
+.forms__select {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     color: rgb(199, 199, 199);
 }
 
-.banner input:focus::placeholder {
+.forms__select:focus {
+    color: black;
+}
+
+.forms__input {
+    margin-top: 4px;
+}
+
+.seletor {
+    margin-top: 4px;
+    position: relative;
+}
+
+.seletor::after {
+    content: '›';
+    position: absolute;
+    right: 10px;
+    font-size: 24px;
+    color: black;
+    top: 7px;
+    transform: rotate(90deg) ;
+    pointer-events: none;
+}
+
+.forms__input::placeholder, .forms__select::placeholder {
+    color: rgb(199, 199, 199);
+    transition: .2s;
+}
+
+.forms__input:focus::placeholder {
     color: red;
 }
 
-.banner input:focus {
+.forms__input:focus {
     color: red;
     outline: 2px solid red;
 }
 
-.banner__disclaimer {
+.forms__button--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.forms__sc-button {
+    display: block;
+    background: #59D359;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 16px;
+    height: 50px;
+    line-height: normal;
+    padding: 0 60px;
+    width: max-content;
+    margin: auto;
+    font-weight: 600;
+    margin: 20px 0px 0px 0px;
+    cursor: pointer;
+    border: none;
+    transition: .2s;
+}
+
+.forms__sc-button:hover {
+    background: #53c053;
+}
+
+.forms__sc-button:focus {
+    background: #0c740c;
+    color: white;
+    outline-color: transparent;
+}
+
+.forms__ctn {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms__disclaimer {
     font-size: 12px;
     text-align: center;
 }
@@ -1256,6 +1517,12 @@ footer hr {
         margin-bottom: 16px;
     }
 
+    /* Forms */
+
+    .forms__topoform {
+        font-size: 18px;
+    }
+
     /* RH */
 
 
@@ -1264,7 +1531,6 @@ footer hr {
     }
 
     /*  */
-
 
     .saber__box {
         position: relative;
