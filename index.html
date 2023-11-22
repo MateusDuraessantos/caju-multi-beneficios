@@ -8,13 +8,15 @@
     <link rel="shortcut icon" type="imagex/png" href="./src/logoaba.svg">
     <!-- Link provisório: https://caju-multi-beneficios-visa.web.app/ -->
 
-        <!-- Google Tag Manager (parte do head) -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-MSKBQ9FX');</script>
-            <!-- Fim do Google Tag Manager (parte do head) -->
+    <!-- Google Tag Manager (parte do head) -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MSKBQ9FX');
+    </script>
+    <!-- Fim do Google Tag Manager (parte do head) -->
 
 </head>
 
@@ -59,6 +61,9 @@
                         <p>
                             Ao oferecer uma variedade maior de opções personalizadas, desde vale-alimentação até incentivo à cultura, as <strong>empresas estão reconhecendo a importância de se adaptarem para levarem mais flexibilidade e liberdade para os colaboradores.</strong>
                         </p>
+
+                        <img class="banner__img" src="https://plus.unsplash.com/premium_photo-1664202219793-89a237c9b612?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        
                     </div>
 
                     <noscript>
@@ -153,121 +158,6 @@
                             A Caju precisa dos seus dados para enviar informações sobre produtos e serviços, além de conteúdos que podem te interessar. Você pode deixar de receber essas comunicações quando quiser. Para obter mais informações, veja nossa Política de Privacidade.
                         </p> 
                     </div>
-                    
-                    <!-- Google Tag Manager (evento de clique no botão) -->
-                    <script>
-                        document.getElementById("submitButton").addEventListener("click", function () {
-                            // Registre o evento de clique no botão "Quero baixar"
-                            dataLayer.push({
-                                'event': 'formSubmission',
-                                'formType': 'Webinar Engajamento colaborador'
-                            });
-                        });
-
-                        // Função para obter parâmetros UTM da URL
-                        function getUTMParameters() {
-                            const urlParams = new URLSearchParams(window.location.search);
-                            const utmParameters = {};
-            
-                            utmParameters['str_utm_source'] = urlParams.get('utm_source') || '';
-                            utmParameters['str_utm_medium'] = urlParams.get('utm_medium') || '';
-                            utmParameters['str_utm_campaign'] = urlParams.get('utm_campaign') || '';
-                            utmParameters['str_utm_term'] = urlParams.get('utm_term') || '';
-            
-                            return utmParameters;
-                        }
-            
-                        var tel = function (val) {
-                            return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 00000-0009';
-                        };
-            
-                        var options = {
-                            onKeyPress: function (val, e, field, options) {
-                                field.mask(tel.apply({}, arguments), options);
-                            }
-                        };
-            
-                        $('#telefone').mask(tel, options);
-                        var botaoEnviar = document.getElementById("submitButton");
-                        botaoEnviar.addEventListener("click", function (e) {
-                            e.preventDefault();
-            
-                            const nome = document.getElementById('nome').value;
-                            const empresa = document.getElementById('empresa').value;
-                            const cargo = document.getElementById('cargo__select').value;
-                            const area = document.getElementById('area__select').value;
-                            const num_funcionarios = document.getElementById('num_funcionarios').value;
-                            const telefone = document.getElementById('telefone').value;
-                            const desafio_empresa = document.getElementById('desafio_empresa__select').value;
-                            const email = document.getElementById('email').value;
-            
-                            // Obter parâmetros UTM da URL
-                            const utmParameters = getUTMParameters();
-            
-                            const telLimpo = telefone.replace(/\D/g, '');
-                            const telCompleto = '55' + telLimpo;
-            
-                            // Obter a data e hora atual
-                            let dataHoraAtual = new Date();
-            
-                            // Formatar a data e hora no padrão brasileiro
-                            let dataHoraFormatada = new Date().toLocaleString('pt-BR');
-            
-                            if (
-                                nome === "" ||
-                                nome === undefined ||
-                                empresa === "" ||
-                                empresa === undefined ||
-                                cargo === "" ||
-                                cargo === undefined ||
-                                area === "" ||
-                                area === undefined ||
-                                telefone === "" ||
-                                telefone === undefined ||
-                                num_funcionarios === "" ||
-                                num_funcionarios === undefined ||
-                                desafio_empresa === ""
-                            ) {
-                                alert('Preencha todos os campos.');
-                            } else {
-                                // Mesclar os parâmetros UTM com os outros dados
-                                const data = JSON.stringify({
-                                    str_lp_name: "Ebook tendências Benefícios",
-                                    str_user_name: nome,
-                                    str_company_name: empresa,
-                                    str_email: email,
-                                    str_business_unit: area,
-                                    str_form_job: cargo,
-                                    str_user_challenge: desafio_empresa,
-                                    nr_phone: telCompleto,
-                                    dt_created_date: dataHoraFormatada,
-                                    str_employees_number: num_funcionarios,
-                                    ...utmParameters // Inclui os parâmetros UTM mapeados corretamente
-                                });
-            
-                                fetch("https://cloud.fala.caju.com.br/79490316949496", { method: 'POST', body: data })
-                                        .then((response) => response.json())
-                                    .then((resposta) => {
-                                        if (resposta.statusCode === 200) {
-                                        dataLayer.push({'event': '003/001-001.059:018;001'});
-                                            window.location.href = "http://cloud.fala.caju.com.br/obrigado";
-                                            
-                                        } else {
-                                            alert('Erro ao inserir dados.');
-                                        }
-                                    });
-                            }
-                        });
-                    </script>
-                    </div>
-
-
-
-                    
-
-
-
-
                 </div>
             </div>
         </section>
@@ -321,9 +211,6 @@
                                 </p>
                             </div>
                         </div>
-
-
-
 
                     </div>
                     <img class="card__img" src="./src/card.svg" alt="Cartão caju">
@@ -624,6 +511,112 @@
         </div>
     </footer>
 </body>
+                    
+<!-- Google Tag Manager (evento de clique no botão) -->
+<script>
+    document.getElementById("submitButton").addEventListener("click", function () {
+        // Registre o evento de clique no botão "Quero baixar"
+        dataLayer.push({
+            'event': 'formSubmission',
+            'formType': 'Webinar Engajamento colaborador'
+        });
+    });
+
+    // Função para obter parâmetros UTM da URL
+    function getUTMParameters() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const utmParameters = {};
+
+        utmParameters['str_utm_source'] = urlParams.get('utm_source') || '';
+        utmParameters['str_utm_medium'] = urlParams.get('utm_medium') || '';
+        utmParameters['str_utm_campaign'] = urlParams.get('utm_campaign') || '';
+        utmParameters['str_utm_term'] = urlParams.get('utm_term') || '';
+
+        return utmParameters;
+    }
+
+    var tel = function (val) {
+        return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 00000-0009';
+    };
+
+    var options = {
+        onKeyPress: function (val, e, field, options) {
+            field.mask(tel.apply({}, arguments), options);
+        }
+    };
+
+    $('#telefone').mask(tel, options);
+    var botaoEnviar = document.getElementById("submitButton");
+    botaoEnviar.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const nome = document.getElementById('nome').value;
+        const empresa = document.getElementById('empresa').value;
+        const cargo = document.getElementById('cargo__select').value;
+        const area = document.getElementById('area__select').value;
+        const num_funcionarios = document.getElementById('num_funcionarios').value;
+        const telefone = document.getElementById('telefone').value;
+        const desafio_empresa = document.getElementById('desafio_empresa__select').value;
+        const email = document.getElementById('email').value;
+
+        // Obter parâmetros UTM da URL
+        const utmParameters = getUTMParameters();
+
+        const telLimpo = telefone.replace(/\D/g, '');
+        const telCompleto = '55' + telLimpo;
+
+        // Obter a data e hora atual
+        let dataHoraAtual = new Date();
+
+        // Formatar a data e hora no padrão brasileiro
+        let dataHoraFormatada = new Date().toLocaleString('pt-BR');
+
+        if (
+            nome === "" ||
+            nome === undefined ||
+            empresa === "" ||
+            empresa === undefined ||
+            cargo === "" ||
+            cargo === undefined ||
+            area === "" ||
+            area === undefined ||
+            telefone === "" ||
+            telefone === undefined ||
+            num_funcionarios === "" ||
+            num_funcionarios === undefined ||
+            desafio_empresa === ""
+        ) {
+            alert('Preencha todos os campos.');
+        } else {
+            // Mesclar os parâmetros UTM com os outros dados
+            const data = JSON.stringify({
+                str_lp_name: "Ebook tendências Benefícios",
+                str_user_name: nome,
+                str_company_name: empresa,
+                str_email: email,
+                str_business_unit: area,
+                str_form_job: cargo,
+                str_user_challenge: desafio_empresa,
+                nr_phone: telCompleto,
+                dt_created_date: dataHoraFormatada,
+                str_employees_number: num_funcionarios,
+                ...utmParameters // Inclui os parâmetros UTM mapeados corretamente
+            });
+
+            fetch("https://cloud.fala.caju.com.br/79490316949496", { method: 'POST', body: data })
+                    .then((response) => response.json())
+                .then((resposta) => {
+                    if (resposta.statusCode === 200) {
+                    dataLayer.push({'event': '003/001-001.059:018;001'});
+                        window.location.href = "http://cloud.fala.caju.com.br/obrigado";
+                        
+                    } else {
+                        alert('Erro ao inserir dados.');
+                    }
+                });
+        }
+    });
+</script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -665,6 +658,7 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-top: 100px;
 }
 
 .general--gap__texts p {
@@ -770,12 +764,19 @@ header {
     overflow: hidden;
 }
 
+.banner__img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
 .banner__grid {
     margin: auto;
     display: grid;
-    grid-template-columns: 1.4fr 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
-    gap: 66px;
+    gap: 180px;
+    width: calc(100% - 160px);
 }
 
 .banner__grafismo {
@@ -797,7 +798,7 @@ header {
 .forms {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
@@ -838,9 +839,6 @@ header {
     -moz-appearance: none;
     appearance: none;
     color: rgb(199, 199, 199);
-}
-
-.forms__select:focus {
     color: black;
 }
 
@@ -899,7 +897,7 @@ header {
     width: max-content;
     margin: auto;
     font-weight: 600;
-    margin: 20px 0px 0px 0px;
+    margin: 6px 0px 0px 0px;
     cursor: pointer;
     border: none;
     transition: .2s;
@@ -1335,6 +1333,13 @@ footer hr {
 
     .banner {
         padding-top: 44px;
+    }
+
+    /* Formulário */
+
+    .banner__grid {
+        width: 100%;
+        gap: 40px;
     }
     
     /* Card */
