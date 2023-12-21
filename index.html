@@ -59,7 +59,7 @@
     <img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=7360381497366216&ev=PageView&noscript=1" />
     </noscript>
       <!-- End Meta Pixel Code do Facebook -->
-    <div class="popup" id="popup" onclick="handlePopup()">
+    <div class="popup handleFunction" id="popup">
         <div class="popup__close">✕</div>
         <div class="popup__overlay">
             <div class="popup__container">
@@ -216,23 +216,6 @@
             });
           }
         });
-
-        /* Interação popup */
-
-        const popup = document.getElementById('popup')
-        function handlePopup() {
-            if (popup.style.display == 'none' || popup.style.display == '') {
-                popup.style.display = 'block'
-                document.body.style.overflowY = 'hidden'
-            } else {
-                popup.classList.add('popup__close--animation')
-                setTimeout(() => {
-                    popup.style.display = 'none'
-                    popup.classList.remove('popup__close--animation')
-                    document.body.style.overflowY = 'initial'
-                }, 500);
-            }
-        }
       </script>
 
     <header>
@@ -259,7 +242,9 @@
                             *Fonte: 31ª Pesquisa de Benefícios Corporativos de 2023 da Marsh
                         </p>
                         
-                        <button class="btn__green" onclick="handlePopup()" style="margin: initial;">Preencha o formulário para saber mais</button>
+                        <button class="btn__green handleFunction" style="margin: initial;">
+                            Preencha o formulário para saber mais
+                        </button>
 
                     </div>
 
@@ -285,6 +270,7 @@
             <div class="body__width">
                 <div class="card__grid">
                     <div class="card__column">
+                        <h1 class="card__title">Como o mercado de trabalho <br> enxerga a tendência dos cartões <br> multibenefícios: </h1>
                         <div class="card__card">
                             <h3 class="card__percentage">
                                 63,4%
@@ -292,7 +278,7 @@
                             <div class="card__container">
                                 <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
                                 <p class="card__description--responsive">
-                                    dos colaboradores afirmam dar tanta importância ao pacote de benefícios quanto ao salário.
+                                    dos colaboradores afirmam <strong>dar tanta importância ao pacote de benefícios quanto ao salário</strong>.
                                 </p>
                                 <p class="card__disclaimer">
                                     Fonte: Robert Half
@@ -307,7 +293,7 @@
                             <div class="card__container">
                                 <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
                                 <p class="card__description--responsive">
-                                    das empresas pensam em oferecer um pacote de benefícios mais flexíveis diante do aumento do turnover e dos desafios econômicos do país
+                                    das empresas <strong>oferecem benefícios como uma estratégia para retenção de talentos</strong>.
                                 </p>
                                 <p class="card__disclaimer">
                                     Fonte: Pesquisa de Remuneração Total 2022
@@ -322,7 +308,7 @@
                             <div class="card__container">
                                 <img class="card__icon" src="./src/icons/health.svg" alt="Icone de coraçào">
                                 <p class="card__description--responsive">
-                                    das empresas tiveram um aumento de produtividade com um programa de benefícios mais flexível.
+                                    das empresas <strong>tiveram um aumento de produtividade</strong> com um programa de benefícios mais flexível.
                                 </p>
                                 <p class="card__disclaimer">
                                     Fonte: International Workplace Group
@@ -346,11 +332,11 @@
                     <div class="rh__ctn--img"><img class="rh__img" src="./src/Imagem-visa.png"></div>
                     <div>
                         <h1>
-                            Bom pro colaborador, <br> bom pro RH
+                            Cabe mais inovação para <br> o RH e mais liberdade <br> para o colaborador
                         </h1>
                         <br>
                         <p>
-                            Oferecer multibenefícios traz uma série de vantagens tanto para o RH quanto para os colaboradores:
+                            Oferecer multibenefícios traz uma série <br> de vantagens tanto para o RH quanto <br> para os colaboradores:
                         </p>
                     </div>
                 </div>
@@ -486,7 +472,7 @@
                 <div class="saber__grid">
                     <div class="saber__box saber--red">
                         <div class="saber__box--responsive">
-                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/be4de4a5-c197-448a-897d-ce7c716f83e5.png" class="saber__img">
+                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/be4de4a5-c197-448a-897d-ce7c716f83e5.png" class="saber__img saber__img--carteira">
                             <h4 class="saber__h4">O que é um cartão <br> multibenefícios e como <br> funciona?</h4>
                         </div>
                         <p class="saber__description">Saiba como um cartão multibenefícios facilita a gestão de diferentes categorias de benefícios.</p>
@@ -565,9 +551,9 @@
                     </div>
                 </div>
 
-                <div class="empresa__grid">
+                <div class="empresa__grid empresa__grid--2">
 
-                    <img class="empresa__img" src="./src/person-card.png">
+                    <div class="empresa__ctn--img"><img class="empresa__img" src="./src/person-card.png"></div>
 
                     <div class="gap__texts general--gap__texts">
                         <h1>Quer saber como Caju Multibenefícios funciona na prática? </h1>
@@ -655,7 +641,36 @@
         </div>
     </footer>
 </body>
-                    
+
+<script>
+/* Interação popup */
+
+const popup = document.getElementById('popup')
+const botoesPopup = document.querySelectorAll('.handleFunction')
+const buttons = ['btn__green', 'popup__overlay', 'popup__close'] 
+const body = document.body
+
+for (let i = 0; i < botoesPopup.length; i++) {
+    botoesPopup[i].addEventListener('click', handlePopup)
+}
+
+function handlePopup(e) {
+    if(buttons.includes(e.target.classList[0])) {
+        if (popup.style.display == 'none' || popup.style.display == '') {
+        popup.style.display = 'block'
+        body.style.overflowY = 'hidden'
+        } else {
+            popup.classList.add('popup__close--animation')
+            setTimeout(() => {
+                popup.style.display = 'none'
+                popup.classList.remove('popup__close--animation')
+                body.style.overflowY = 'initial'
+            }, 500);
+        }
+    }
+}
+</script>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /* font-family: 'Inter', sans-serif; */
@@ -698,7 +713,6 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 100px;
 }
 
 .general--gap__texts p {
@@ -995,12 +1009,12 @@ header {
     background: var(--red);
     min-height: 100vh;
     width: 100%;
-    padding: 0 0 120px 0;
+    padding: 80px 0 120px 0;
     overflow: hidden;
 }
 
 .banner__img {
-    width: 100%;
+    width: 112%;
 }
 
 .banner__grid {
@@ -1060,6 +1074,12 @@ header {
     justify-content: center;
     height: 100%;
     padding-top: 60px;
+}
+
+.card__title {
+    font-size: 26px;
+    margin-bottom: 40px;
+    color: var(--green);
 }
 
 .card__card {
@@ -1247,12 +1267,18 @@ header {
 
 .saber--yellow {
   background: #FFCB2E;  
+  color: black;
 }
 
 .saber__img {
     width: 150px;
     height: 150px;
     object-fit: contain;
+}
+
+.saber__img--carteira {
+    width: 190px;
+    height: 190px;
 }
 
 /* empresa */
@@ -1265,6 +1291,10 @@ header {
     overflow: hidden;
     border-radius: 60px 60px 0 0;
     padding-bottom: 0;
+}
+
+.empresa .btn__red {
+    margin: initial;
 }
 
 .empresa__grafismo--1 {
@@ -1286,7 +1316,22 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+}
+
+.empresa__grid--2 {
     align-items: center;
+    height: 400px;
+}
+
+.empresa__ctn--img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.empresa__ctn--img img {
+    position: absolute;
+    bottom: 0;
 }
 
 .empresa__img {
@@ -1360,9 +1405,9 @@ header {
     padding: 0 20px;
     border-radius: 12px;
 }
-
+ 
 .prova__card a {
-    color: black;
+    color: #626262;
 }
 
 .prova__img {
@@ -1467,6 +1512,10 @@ footer hr {
         display: none;
     }
 
+    .banner__img {
+        width: 100%;   
+    }
+
     .saber, .body__border {
         border-radius: 30px 30px 0 0 ;
     }
@@ -1481,6 +1530,14 @@ footer hr {
 
     .empresa__grid {
         padding: 12px;
+    }
+
+    .empresa__ctn--img img {
+        position: initial;
+    }
+    
+    .empresa__grid--2 {
+        height: initial;
     }
 
     /* Banner */
