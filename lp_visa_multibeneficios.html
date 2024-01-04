@@ -3,62 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caju - Multi Benefícios Visa</title>
+    <title>download - Caju Multibenefícios Visa</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="imagex/png" href="./src/logoaba.svg">
+    <link rel="shortcut icon" type="imagex/png" href="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/0d93b1cb-ce89-4f87-9e7b-868716ed40cd.png">
     <!-- Link provisório: https://caju-multi-beneficios-visa.web.app/ -->
 
     <!-- Google Tag Manager (parte do head) -->
     <script>
-        (function(w, d, s, l, i) {
-          w[l] = w[l] || [];
-          w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-          });
-          var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-          j.async = true;
-          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-          f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-MSKBQ9FX');
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MSKBQ9FX');
     </script>
     <!-- Fim do Google Tag Manager (parte do head) -->
+
 </head>
 
 <body>
-
+    <!-- Google Tag Manager (noscript) -->
     <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSKBQ9FX" height="1" width="1" style="display: none;visibility:hidden"></iframe>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MSKBQ9FX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
-
     <!-- Fim do Google Tag Manager (noscript) -->
-    <!-- Meta Pixel Code do Facebook -->
-    <script>
-    ! function(f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function() {
-        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s)
-    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '7360381497366216');
-    fbq('track', 'PageView');
-    </script>
-    <noscript>
-    <img height="1" width="1" style="display: none" src="https://www.facebook.com/tr?id=7360381497366216&ev=PageView&noscript=1" />
-    </noscript>
-      <!-- End Meta Pixel Code do Facebook -->
+
     <div class="popup handleFunction" id="popup">
         <div class="popup__close">✕</div>
         <div class="popup__overlay">
@@ -134,100 +102,19 @@
             </div>
         </div>
     </div>
-      <!-- Google Tag Manager (evento de clique no botão) -->
-      <script>
-        document.getElementById("submitButton").addEventListener("click", function() {
-          // Registre o evento de clique no botão "Quero baixar"
-          dataLayer.push({
-            'event': 'formSubmission',
-            'formType': 'Webinar Engajamento colaborador'
-          });
-        });
-      </script>
-  
-      <script>
-        // Função para obter parâmetros UTM da URL
-        function getUTMParameters() {
-          const urlParams = new URLSearchParams(window.location.search);
-          const utmParameters = {};
-          utmParameters['str_utm_source'] = urlParams.get('utm_source') || '';
-          utmParameters['str_utm_medium'] = urlParams.get('utm_medium') || '';
-          utmParameters['str_utm_campaign'] = urlParams.get('utm_campaign') || '';
-          utmParameters['str_utm_term'] = urlParams.get('utm_term') || '';
-          return utmParameters;
-        }
-        var tel = function(val) {
-          return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 00000-0009';
-        };
-        var options = {
-          onKeyPress: function(val, e, field, options) {
-            field.mask(tel.apply({}, arguments), options);
-          }
-        };
-        $('#telefone').mask(tel, options);
-        var botaoEnviar = document.getElementById("submitButton");
-        botaoEnviar.addEventListener("click", function(e) {
-          e.preventDefault();
-          const nome = document.getElementById('nome').value;
-          const empresa = document.getElementById('empresa').value;
-          const cargo = document.getElementById('cargo__select').value;
-          const area = document.getElementById('area__select').value;
-          const num_funcionarios = document.getElementById('num_funcionarios').value;
-          const telefone = document.getElementById('telefone').value;
-          const desafio_empresa = document.getElementById('desafio_empresa__select').value;
-          const email = document.getElementById('email').value;
-          // Obter parâmetros UTM da URL
-          const utmParameters = getUTMParameters();
-          const telLimpo = telefone.replace(/\D/g, '');
-          const telCompleto = '55' + telLimpo;
-          // Obter a data e hora atual
-          let dataHoraAtual = new Date();
-          // Formatar a data e hora no padrão brasileiro
-          let dataHoraFormatada = new Date().toLocaleString('pt-BR');
-          if (nome === "" || nome === undefined || empresa === "" || empresa === undefined || cargo === "" || cargo === undefined || area === "" || area === undefined || telefone === "" || telefone === undefined || num_funcionarios === "" || num_funcionarios === undefined || desafio_empresa === "") {
-            alert('Preencha todos os campos.');
-          } else {
-            // Mesclar os parâmetros UTM com os outros dados
-            const data = JSON.stringify({
-              str_lp_name: "Ebook tendências Benefícios",
-              str_user_name: nome,
-              str_company_name: empresa,
-              str_email: email,
-              str_business_unit: area,
-              str_form_job: cargo,
-              str_user_challenge: desafio_empresa,
-              nr_phone: telCompleto,
-              dt_created_date: dataHoraFormatada,
-              str_employees_number: num_funcionarios,
-              ...utmParameters // Inclui os parâmetros UTM mapeados corretamente
-            });
-            fetch("https://cloud.fala.caju.com.br/79490316949496", {
-              method: 'POST',
-              body: data
-            }).then((response) => response.json()).then((resposta) => {
-              if (resposta.statusCode === 200) {
-                dataLayer.push({
-                  'event': '003/001-001.059:018;001'
-                });
-                window.location.href = "http://cloud.fala.caju.com.br/obrigado";
-              } else {
-                alert('Erro ao inserir dados.');
-              }
-            });
-          }
-        });
-      </script>
 
     <header>
-        <img class="header__img" src="./src/logo.svg" alt="Logo">
+      <a data-hash="003/001-037.002:057;001" href="https://www.caju.com.br/" target="_blank">
+        <img class="header__img" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/d3df6cf4-9c8b-4265-a44a-b00e2d459c4a.png" alt="Logo">
+      </a>
     </header>
 
     <main>
         <section class="banner">
-
-            <img class="banner__grafismo" src="./src/graf-1.svg" alt="grafismo">
-            <img class="banner__grafismo--0" src="./src/graf-0.svg" alt="grafismo">
             
+            <img class="banner__grafismo" src="./graf-1.svg" alt="grafismo">
+            <img class="banner__grafismo--0" src="./graf-0.svg" alt="grafismo">
+
             <div class="body__width">
                 <div class="banner__grid">
                     <div class="general--gap__texts">
@@ -252,8 +139,7 @@
 
                     <!-- End Meta Pixel Code do Facebook -->
                     
-                    <img class="banner__img" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/8deaa1b8-a0ec-4152-bf69-a4c9bf4ace07.png" alt="">
-
+                    <img class="banner__img" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/8deaa1b8-a0ec-4152-bf69-a4c9bf4ace07.png">
                 </div>
                 <div class="banner__descubra">
                     <h3>
@@ -265,12 +151,11 @@
                         <img class="banner__btn--link" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/db3b278e-30b3-443f-a1b4-002100d2e5c8.png" />
                     </a>
                 </div>
-
             </div>
         </section>
 
         <section class="card" id="myDiv">
-            <img class="card__grafismo" src="./src/graf-5.svg" alt="Grafismo">
+            <img class="card__grafismo" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/b7245ab7-5838-42fa-85a7-dfd8e2418e9d.png" alt="Grafismo">
             <div class="body__width">
                 <div class="card__grid">
                     <div class="card__column">
@@ -280,9 +165,9 @@
                                 63,4%
                             </h3>
                             <div class="card__container">
-                                <img class="card__icon" src="./src/health.svg" alt="Icone de coraçào">
+                                <img class="card__icon" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/91242336-6870-4408-8f0e-c937c75402aa.png" alt="Icone de coraçào">
                                 <p class="card__description--responsive">
-                                    dos colaboradores afirmam <strong>dar tanta importância ao pacote de benefícios quanto ao salário</strong>.
+                                    dos colaboradores afirmam<strong> dar tanta importância ao pacote de benefícios quanto ao salário</strong>.
                                 </p>
                                 <p class="card__disclaimer">
                                     Fonte: Robert Half
@@ -295,9 +180,9 @@
                                 48%
                             </h3>
                             <div class="card__container">
-                                <img class="card__icon" src="./src/health.svg" alt="Icone de coraçào">
+                                <img class="card__icon" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/91242336-6870-4408-8f0e-c937c75402aa.png" alt="Icone de coraçào">
                                 <p class="card__description--responsive">
-                                    das empresas <strong>oferecem benefícios como uma estratégia para retenção de talentos</strong>.
+                                    das empresas <strong>oferecem benefícios como uma estratégia para retenção de talentos</strong>
                                 </p>
                                 <p class="card__disclaimer">
                                     Fonte: Pesquisa de Remuneração Total 2022
@@ -310,7 +195,7 @@
                                 80%
                             </h3>
                             <div class="card__container">
-                                <img class="card__icon" src="./src/health.svg" alt="Icone de coraçào">
+                                <img class="card__icon" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/91242336-6870-4408-8f0e-c937c75402aa.png" alt="Icone de coraçào">
                                 <p class="card__description--responsive">
                                     das empresas <strong>tiveram um aumento de produtividade</strong> com um programa de benefícios mais flexível.
                                 </p>
@@ -321,19 +206,20 @@
                         </div>
 
                     </div>
-                    <img class="card__img" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/1f6163c3-f731-4b07-b681-ee612ef0d60d.png" alt="Cartão caju">
+                    <img class="card__img" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/b235cb1c-97ea-4c8a-8fac-e5986aea1dd4.png" alt="Cartão caju">
                 </div>
 
-                <div class="general--container__button"><button class="btn__red">Descubra tudo o que Cabe num Caju</button></div>
+                <div class="general--container__button">
+                  <a data-hash="003/001-001.034:018;001" data-label="descubra-tudo-o-que-cabe-num-caju" href="https://www.caju.com.br/?utm_source=referral&utm_medium=landing_page&utm_campaign=lp_consideracao_multibeneficios&utm_term=segunda_dobra" target="_blank"><button class="btn__red">Descubra tudo o que Cabe num Caju</button></a></div>
 
             </div>
         </section>
 
         <section class="rh">
-            <img class="rh__grafismo" src="./src/graf-2.svg">
+            <img class="rh__grafismo" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/1da025ee-d384-4dbe-9752-b4845ab8b8f2.png">
             <div class="body__width">
                 <div class="rh__grid">
-                    <div class="rh__ctn--img"><img class="rh__img" src="./src/Imagem-visa.png"></div>
+                    <div class="rh__ctn--img"><img class="rh__img" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/3e7f6392-0292-41ae-876b-59f6f0b101ac.png"></div>
                     <div>
                         <h1>
                             Cabe mais inovação para <br> o RH e mais liberdade <br> para o colaborador
@@ -347,7 +233,7 @@
 
                 <div class="rh__box box__orange">
                     <div class="rh__box--responsive">
-                        <img class="rh__box--img" src="./src/heart.svg">
+                        <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/40818760-361a-4669-8752-5a7f05f8f6b7.png">
                         <p class="rh__title">
                             Para o RH
                         </p>
@@ -355,7 +241,7 @@
 
                     <div>
                         <div class="box__ctn">
-                            <img class="box__ctn--img" src="./src/eng.svg">
+                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/3c61eaef-feae-40a7-8d4d-a906767720a9.png">
                             <div>
                                 <h6>
                                     Facilidade operacional
@@ -369,7 +255,7 @@
                         <hr>
 
                         <div class="box__ctn">
-                            <img class="box__ctn--img" src="./src/target.svg">
+                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/43b901e6-2a63-4410-8091-04ac6a63b301.png">
                             <div>
                                 <h6>
                                     Foco estratégico
@@ -383,7 +269,7 @@
                         <hr>
 
                         <div class="box__ctn">
-                            <img class="box__ctn--img" src="./src/star.svg">
+                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/3938ca84-c272-4cc4-bd76-e70b58bafa96.png">
                             <div>
                                 <h6>
                                     Atração de talentos
@@ -393,7 +279,7 @@
                                 </p>
                             </div>
                         </div>
-
+                        
                         <hr>
 
                         <div class="box__ctn">
@@ -412,15 +298,15 @@
 
                 <div class="rh__box box__green">
                     <div class="rh__box--responsive">
-                        <img class="rh__box--img" src="./src/person.svg">
+                        <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/366d7fed-806f-4594-ae38-fd4b39689de2.png">
                         <p class="rh__title">
-                            Para o <br> colaborador
+                            Para o<br>colaborador
                         </p>
                     </div>
 
                     <div>
                         <div class="box__ctn">
-                            <img class="box__ctn--img" src="./src/check.svg">
+                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/cb7b634d-1340-42c3-bc22-f85468ac37fb.png">
                             <div>
                                 <h6>
                                     Liberdade de escolha
@@ -434,7 +320,7 @@
                         <hr>
 
                         <div class="box__ctn">
-                            <img class="box__ctn--img" src="./src/smile.svg">
+                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/471ba5a7-f1cb-40e7-a100-5028dc2cd2e2.png">
                             <div>
                                 <h6>
                                     Melhor experiência
@@ -448,7 +334,7 @@
                         <hr>
 
                         <div class="box__ctn">
-                            <img class="box__ctn--img" src="./src/top.svg">
+                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/aaae97b0-9e2f-491a-87aa-990dfbfb3072.png">
                             <div>
                                 <h6>
                                     Aumento de produtividade
@@ -462,7 +348,8 @@
                 </div>
 
                 <div class="general--container__button">
-                    <button class="btn__green">Prove o Cartão Caju Multibenefícios</button>
+                  <a data-hash="003/001-001.034:018;001" data-label="leve-caju-para-sua-empresa-1" href="https://www.caju.com.br/?utm_source=referral&utm_medium=landing_page&utm_campaign=lp_consideracao_multibeneficios&utm_term=quarta_dobra" target="_blank">
+                    <button class="btn__green">Prove o Cartão Caju Multibenefícios</button></a>
                 </div>
             </div>
         </section>
@@ -476,43 +363,43 @@
                 <div class="saber__grid">
                     <div class="saber__box saber--red">
                         <div class="saber__box--responsive">
-                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/be4de4a5-c197-448a-897d-ce7c716f83e5.png" class="saber__img saber__img--carteira">
+                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/c40c71a2-4a9b-4b23-be3f-6f6ac316e358.png" class="saber__img">
                             <h4 class="saber__h4">O que é um cartão <br> multibenefícios e como <br> funciona?</h4>
                         </div>
                         <p class="saber__description">Saiba como um cartão multibenefícios facilita a gestão de diferentes categorias de benefícios.</p>
-                        <button class="saber-btn__green">Confira as vantagens!</button>
+                        <a data-hash="003/001-075.023:037;001" data-label="confira-as-vantagens" href="https://blog.caju.com.br/beneficios/cartao-multibeneficios/" target="_blank"><button class="saber-btn__green">Confira as vantagens!</button></a>
                     </div>
                     <div class="saber__box saber--orange">
                         <div class="saber__box--responsive">
-                            <img src="./src/premio.svg" class="saber__img">
+                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/cfff9235-276c-4815-912e-e21b555b2cb7.png" class="saber__img">
                             <h4 class="saber__h4">4 soluções da Caju <br> para atração e <br> retenção de talentos</h4>
                         </div>
                         <p class="saber__description">Descubra como a Caju pode te ajudar a impulsionar sua estratégia de atração e retenção de talentos com soluções descomplicadas e poderosas.</p>
-                        <button class="saber-btn__red">Saiba mais!</button>
+                        <a data-hash="003/001-075.023:037;001" data-label="saiba-mais" href="https://blog.caju.com.br/institucional/solucoes-da-caju-atracao-retencao-de-talentos/" target="_blank"><button class="saber-btn__red">Saiba mais!</button></a>
                     </div>
                     <div class="saber__box saber--green">
                         <div class="saber__box--responsive">
-                            <img src="./src/docs.svg" class="saber__img">
+                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/1dd4ae4e-3ba0-4263-a56e-1fff41006058.png" class="saber__img">
                             <h4 class="saber__h4">O que é política de benefícios, <br> suas vantagens e como <br> implementar na sua empresa</h4>
                         </div>
                         <p class="saber__description">Entenda qual é a importância de construir uma política de benefícios na sua empresa e aprenda o passo a passo para criá-la.</p>
-                        <button class="saber-btn__red">Descubra agora!</button>
+                        <a data-hash="003/001-075.023:037;001" data-label="descubra-agora" href="https://blog.caju.com.br/beneficios/politica-de-beneficios/" target="_blank"><button class="saber-btn__red">Descubra agora!</button></a>
                     </div>
                     <div class="saber__box saber--yellow">
                         <div class="saber__box--responsive">
-                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/f4843d98-015b-4634-ae5e-5190160c24ac.png" class="saber__img">
+                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/94b3efd7-9277-4090-8db7-f81c3907e567.png" class="saber__img">
                             <h4 class="saber__h4">Vale-refeição e vale-alimentação: o que é, <br> principais diferenças e como oferecer <br> esses benefícios aos seus colaboradores</h4>
                         </div>
                         <p class="saber__description">Saiba quais são as principais diferenças e vantagens entre vale-alimentação e vale-refeição.</p>
-                        <button class="saber-btn__red">Confira mais!</button>
+                        <a data-hash="003/001-075.023:037;001" data-label="confira-mais" href="https://blog.caju.com.br/beneficios/vale-refeicao/" target="_blank"><button class="saber-btn__red">Confira mais!</button></a>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="empresa">
-            <img class="empresa__grafismo--1" src="./src/graf-3.svg">
-            <img class="empresa__grafismo--2" src="./src/graf-4.svg">
+            <img class="empresa__grafismo--1" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/2f6c1ef2-fe69-4a4a-af39-394d128ae532.png">
+            <img class="empresa__grafismo--2" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/b8ec327c-9ca6-4c95-a5e5-f8167d4ea2b7.png">
             <div class="body__width">
                 <div class="empresa__grid">
                     <div class=" general--gap__texts">
@@ -526,30 +413,31 @@
                             Se hoje já inovamos o modelo tradicional de trabalho, não tem porque os benefícios da sua empresa ficarem presos ao passado.
                             <strong> A Caju tem multibenefícios que deixam todo tipo de empresa mais leve:</strong>
                         </p>
+
                     </div>
                     <div>
                         <div class="empresa__card">
-                            <img class="empresa__card--img" src="./src/fork.svg">
+                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/a88c90fd-cd2c-4faf-b5aa-febea9a7bb2f.png">
                             <p>Até 8 categorias de benefícios em um único cartão</p>
                         </div>
 
                         <div class="empresa__card">
-                            <img class="empresa__card--img" src="./src/loja.svg">
+                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/ad99207c-d404-449c-aed5-a5825c79affd.png">
                             <p>Bandeira Visa - aceita em mais de 2 milhões de estabelecimentos</p>
                         </div>
 
                         <div class="empresa__card">
-                            <img class="empresa__card--img" src="./src/gear.svg">
+                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/8f878953-f928-4b54-a900-4363e3e76396.png">
                             <p>Gestão centralizada de todos os benefícios</p>
                         </div>
 
                         <div class="empresa__card">
-                            <img class="empresa__card--img" src="./src/lock.svg">
+                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/3c219814-d498-432a-a332-84be52cdec25.png">
                             <p>Toda segurança jurídica para os benefícios seguindo os padrões da CLT</p>
                         </div>
 
                         <div class="empresa__card">
-                            <img class="empresa__card--img" src="./src/phone.svg">
+                            <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/a261f10e-80ab-41c1-a17e-77519426e21e.png">
                             <p>Atendimento todos os dias, inclusive finais de semana e feriados</p>
                         </div>
                     </div>
@@ -557,14 +445,14 @@
 
                 <div class="empresa__grid empresa__grid--2">
 
-                    <div class="empresa__ctn--img"><img class="empresa__img" src="./src/person-card.png"></div>
+                    <div class="empresa__ctn--img"><img class="empresa__img" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/ea83c995-e1d1-4b9a-a17c-fed7a602a9c3.png"></div>
 
                     <div class="gap__texts general--gap__texts">
                         <h1>Quer saber como Caju Multibenefícios funciona na prática? </h1>
-                        
+
                         <p>Receba um vídeo de demonstração e entenda como a Caju pode ajudar o seu RH a ter mais agilidade e os seus colaboradores mais flexibilidade.</p>
-                        
-                        <button class="btn__red">Conheça Caju Multibenefícios</button>
+
+                        <a data-hash="003/001-001.034:018;001" data-label="conheca-caju-multibeneficios" href="" target="_blank"><button class="btn__red">Conheça Caju Multibenefícios</button></a>
                     </div>
                 </div>
             </div>
@@ -576,29 +464,28 @@
                     <div class="prova__grid">
                         <div class="prova__container--cards">
                             <div class="prova__card">
-                                <img class="prova__img" src="./src/olist.png">
+                                <img class="prova__img" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/375500b2-8a48-4bda-ab9b-a746cd20da61.png">
                                 <p>
                                     <a href="https://blog.caju.com.br/historias-de-clientes/case-olist/" target="_blank">Como o Olist subiu 7% em seu eNPS promovendo melhorias nos benefícios corporativos.</a>
                                 </p>
                             </div>
                             <div class="prova__card">
-                                <img class="prova__img" src="./src/loft.png">
+                                <img class="prova__img" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/50d65221-ad12-4922-9e5d-333e99efaad8.png">
                                 <p>
                                     <a href="https://blog.caju.com.br/historias-de-clientes/case-loft/" target="_blank">Loft implementa pacote de multibenefícios da Caju durante a pandemia.</a>
                                 </p>
                             </div>
                             <div class="prova__card">
-                                <img class="prova__img" src="./src/bt_creditos.png">
+                                <img class="prova__img" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/18b659da-306a-425b-a1cb-61c1bb2bfd30.png">
                                 <p>
                                     <a href="https://blog.caju.com.br/historias-de-clientes/case-bt-creditos/" target="_blank">Como a BT Créditos otimizou pagamento de benefícios com a Caju.</a>
                                 </p>
                             </div>
                         </div>
-                        <iframe class="prova__iframe" src="https://www.youtube.com/embed/V6GxyAXqSZA" title="Case Dengo: Como a Caju trouxe mais agilidade na compra de benefícios" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      <iframe class="prova__iframe" src="https://www.youtube.com/embed/V6GxyAXqSZA" title="Case Dengo: Como a Caju trouxe mais agilidade na compra de benefícios" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
 
                     <div class="prova__ctn">
-
                         <img class="prova__ctn--graf-1" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/6759bcd6-b57e-4890-a60a-8b0dcb2440e8.png">
                         <img class="prova__ctn--graf-2" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/e83feffa-bb7e-4ab0-9bfb-806bf9162cc6.png">
 
@@ -610,75 +497,182 @@
                     </div>
 
                     <div class="general--container__button">
-                        <button class="btn__red">Descubra o que Cabe num Caju!</button>
+                      <a data-hash="003/001-001.034:018;001" data-label="leve-caju-para-sua-empresa-2" href="" target="_blank"> <button class="btn__red">Leve Caju para sua empresa!</button></a>
                     </div>
                 </div>
             </div>
-        </section> 
+        </section>
     </main>
 
     <footer>
         <div class="footer__space">
-            <img class="footer__logo" src="./src/logo.svg" alt="Logo Caju">
+          <a data-hash="003/001-001.032:002;001" href="https://www.caju.com.br/">
+            <img class="footer__logo" src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/ce7e7ee2-c95f-455a-81eb-d301272dee8d.png" alt="Logo Caju"></a>
             <div class="footer__icons">
-                <a href="" class="footer__links">
-                    <img src="./src/insta.svg" alt="Instagram">
+                <a data-hash="003/001-001.033:062;001" data-label="instagram" href="https://www.instagram.com/cajubeneficios/" target="_blank">
+                    <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/8730e80f-f4be-4f90-94c3-a1dc2fae5784.png" alt="Instagram">
                 </a>
-                <a href="" class="footer__links">
-                    <img src="./src/linkedin.svg" alt="LinkedIn">
+                <a data-hash="003/001-001.033:062;001" data-label="linkedin" href="https://www.linkedin.com/company/cajubeneficios/" target="_blank">
+                    <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/00dd822f-5184-43c9-8f64-e308ff0821d6.png" alt="LinkedIn">
                 </a>
-                <a href="" class="footer__links">
-                    <img src="./src/face.svg" alt="Facebook">
+                <a data-hash="003/001-001.033:062;001" data-label="facebook" href="https://web.facebook.com/cajubeneficios?_rdc=1&_rdr" target="_blank">
+                    <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/0d908b24-0f60-4497-abae-d6981ad7d0d0.png" alt="Facebook">
                 </a>
-                <a href="" class="footer__links">
-                    <img src="./src/youtube.svg" alt="youtube">
+                <a data-hash="003/001-001.033:062;001" data-label="youtube" href="https://www.youtube.com/c/cajubeneficios" target="_blank" >
+                    <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/6b7bae0a-73cf-4fee-a87c-98ed463e213d.png" alt="youtube">
                 </a>
-                <a href="" class="footer__links">
-                    <img src="./src/x.svg" alt="X">
+                <a data-hash="003/001-001.033:062;001" data-label="x" href="https://twitter.com/cajubeneficios" target="_blank">
+                    <img src="https://image.fala.caju.com.br/lib/fe3211737164047b701270/m/1/8c94c485-d882-4d25-80fa-21920ab07d0a.png" alt="X">
                 </a>
             </div>
         </div>
         <hr>
         <div class="footer__diretos">
             <p>Caju ® 2023. Todos os direitos reservados.</p>
-            <p class="footer__termos">Política de privacidade | Termos de Uso</p>
+          <p class="footer__termos"><a data-hash="003/001-038.032:060;001" data-label="termos-de-privacidade" href="https://www.caju.com.br/privacidade" target="_blank" style="text-decoration:none; color:#767676">Política de privacidade</a> | <a data-hash="003/001-038.032:060;001" data-label="termos-de-uso" href="https://www.caju.com.br/termos-de-uso/empresas" target="_blank" style="text-decoration:none; color:#767676">Termos de Uso</a></p>
         </div>
     </footer>
 </body>
 
+<!-- Google Tag Manager (evento de clique no botão) -->
 <script>
-/* Interação popup */
+    document.getElementById("submitButton").addEventListener("click", function () {
+        // Registre o evento de clique no botão "Quero baixar"
+        dataLayer.push({
+            'event': 'formSubmission',
+            'formType': 'Webinar Engajamento colaborador'
+        });
+    });
 
-const popup = document.getElementById('popup')
-const botoesPopup = document.querySelectorAll('.handleFunction')
-const buttons = ['btn__green', 'popup__overlay', 'popup__close'] 
-const body = document.body
+    // Função para obter parâmetros UTM da URL
+    function getUTMParameters() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const utmParameters = {};
 
-for (let i = 0; i < botoesPopup.length; i++) {
-    botoesPopup[i].addEventListener('click', handlePopup)
-}
+        utmParameters['str_utm_source'] = urlParams.get('utm_source') || '';
+        utmParameters['str_utm_medium'] = urlParams.get('utm_medium') || '';
+        utmParameters['str_utm_campaign'] = urlParams.get('utm_campaign') || '';
+        utmParameters['str_utm_term'] = urlParams.get('utm_term') || '';
 
-setTimeout(()=> {
-    popup.style.display = 'block'
-    body.style.overflowY = 'hidden'
-}, 5000)
+        return utmParameters;
+    }
 
-function handlePopup(e) {
-    if(buttons.includes(e.target.classList[0]) || e == true) {
-        if (popup.style.display == 'none' || popup.style.display == '') {
-            popup.style.display = 'block'
-            body.style.overflowY = 'hidden'
+    var tel = function (val) {
+        return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 00000-0009';
+    };
+
+    var options = {
+        onKeyPress: function (val, e, field, options) {
+            field.mask(tel.apply({}, arguments), options);
+        }
+    };
+
+    $('#telefone').mask(tel, options);
+    var botaoEnviar = document.getElementById("submitButton");
+    botaoEnviar.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        const nome = document.getElementById('nome').value;
+        const empresa = document.getElementById('empresa').value;
+        const cargo = document.getElementById('cargo__select').value;
+        const area = document.getElementById('area__select').value;
+        const num_funcionarios = document.getElementById('num_funcionarios').value;
+        const telefone = document.getElementById('telefone').value;
+        const desafio_empresa = document.getElementById('desafio_empresa__select').value;
+        const email = document.getElementById('email').value;
+
+        // Obter parâmetros UTM da URL
+        const utmParameters = getUTMParameters();
+
+        const telLimpo = telefone.replace(/\D/g, '');
+        const telCompleto = '55' + telLimpo;
+
+        // Obter a data e hora atual
+        let dataHoraAtual = new Date();
+
+        // Formatar a data e hora no padrão brasileiro
+        let dataHoraFormatada = new Date().toLocaleString('pt-BR');
+
+        if (
+            nome === "" ||
+            nome === undefined ||
+            empresa === "" ||
+            empresa === undefined ||
+            cargo === "" ||
+            cargo === undefined ||
+            area === "" ||
+            area === undefined ||
+            telefone === "" ||
+            telefone === undefined ||
+            num_funcionarios === "" ||
+            num_funcionarios === undefined ||
+            desafio_empresa === ""
+        ) {
+            alert('Preencha todos os campos.');
         } else {
-            popup.classList.add('popup__close--animation')
-            setTimeout(() => {
-                popup.style.display = 'none'
-                popup.classList.remove('popup__close--animation')
-                body.style.overflowY = 'initial'
-            }, 500);
+            // Mesclar os parâmetros UTM com os outros dados
+            const data = JSON.stringify({
+                str_lp_name: "Campanha Visa Multibenefícios",
+                str_user_name: nome,
+                str_company_name: empresa,
+                str_email: email,
+                str_business_unit: area,
+                str_form_job: cargo,
+                str_user_challenge: desafio_empresa,
+                nr_phone: telCompleto,
+                dt_created_date: dataHoraFormatada,
+                str_employees_number: num_funcionarios,
+                ...utmParameters // Inclui os parâmetros UTM mapeados corretamente
+            });
+
+            fetch("https://cloud.fala.caju.com.br/79490316949496", { method: 'POST', body: data })
+                    .then((response) => response.json())
+                .then((resposta) => {
+                    if (resposta.statusCode === 200) {
+                    dataLayer.push({'event': '003/001-001.059:018;001'});
+                        window.location.href = "http://cloud.fala.caju.com.br/obrigado";
+
+                    } else {
+                        alert('Erro ao inserir dados.');
+                    }
+                });
+        }
+    });
+</script>
+
+<script>
+    /* Interação popup */
+    
+    const popup = document.getElementById('popup')
+    const botoesPopup = document.querySelectorAll('.handleFunction')
+    const buttons = ['btn__green', 'popup__overlay', 'popup__close'] 
+    const body = document.body
+    
+    for (let i = 0; i < botoesPopup.length; i++) {
+        botoesPopup[i].addEventListener('click', handlePopup)
+    }
+    
+   /*  setTimeout(()=> {
+        popup.style.display = 'block'
+        body.style.overflowY = 'hidden'
+    }, 5000) */
+    
+    function handlePopup(e) {
+        if(buttons.includes(e.target.classList[0]) || e == true) {
+            if (popup.style.display == 'none' || popup.style.display == '') {
+                popup.style.display = 'block'
+                body.style.overflowY = 'hidden'
+            } else {
+                popup.classList.add('popup__close--animation')
+                setTimeout(() => {
+                    popup.style.display = 'none'
+                    popup.classList.remove('popup__close--animation')
+                    body.style.overflowY = 'initial'
+                }, 500);
+            }
         }
     }
-}
-</script>
+    </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -690,7 +684,6 @@ function handlePopup(e) {
     font-family: 'Inter', sans-serif;
     box-sizing: border-box !important;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -707,8 +700,6 @@ html {
 
 body {
     color: white;
-    overflow-x: hidden;
-    width: 100vw;
 }
 
 h1 {
@@ -719,7 +710,7 @@ h1 {
 .general--container__button {
     display: flex;
     justify-content: center;
-    margin: 60px 0 100px 0;
+    margin: 100px 0;
     width: 100%;
 }
 
@@ -772,11 +763,11 @@ button {
 }
 
 .btn__green, .saber-btn__green {
-    background: var(--green); 
+    background: var(--green);
  }
 
 .btn__red, .saber-btn__red {
-    background: var(--red); 
+    background: var(--red);
 }
 
 .btn__green, .saber-btn__green {
@@ -998,6 +989,7 @@ div.single-input label {
     display: block;
 }
 
+
 /* Header */
 
 header {
@@ -1102,8 +1094,8 @@ header {
 }
 
 .card__column {
-    display: flex; 
-    flex-direction:  column; 
+    display: flex;
+    flex-direction:  column;
     justify-content: center;
     height: 100%;
     padding-top: 60px;
@@ -1199,10 +1191,6 @@ header {
     margin-bottom: 40px;
 }
 
-.rh__box--img {
-    width: 100px;
-}
-
 .rh__box hr {
     border: none;
     border-bottom: 1px solid white;
@@ -1291,19 +1279,19 @@ header {
 }
 
 .saber--red {
-   background: var(--red); 
+   background: var(--red);
 }
 
 .saber--orange {
-   background: var(--orange); 
+   background: var(--orange);
 }
 
 .saber--green {
-  background: var(--green);  
+  background: var(--green);
 }
 
 .saber--yellow {
-  background: #FFCB2E;  
+  background: #FFCB2E;
   color: black;
 }
 
@@ -1311,11 +1299,6 @@ header {
     width: 150px;
     height: 150px;
     object-fit: contain;
-}
-
-.saber__img--carteira {
-    width: 190px;
-    object-fit: cover;
 }
 
 /* empresa */
@@ -1328,10 +1311,6 @@ header {
     overflow: hidden;
     border-radius: 60px 60px 0 0;
     padding-bottom: 0;
-}
-
-.empresa .btn__red {
-    margin: initial;
 }
 
 .empresa__grafismo--1 {
@@ -1398,12 +1377,6 @@ header {
     gap: 20px;;
 }
 
-.empresa__card--img {
-    width: 21px;
-    height: 21px;
-    object-fit: contain;
-}
-
 /* prova */
 
 
@@ -1417,7 +1390,6 @@ header {
     border-radius: 60px 60px 0 0;
     padding-top: 100px;
     z-index: 1;
-    padding-bottom: 10px;
 }
 
 .prova__grid {
@@ -1442,13 +1414,13 @@ header {
     padding: 0 20px;
     border-radius: 12px;
 }
- 
+
 .prova__card a {
     color: #626262;
 }
 
 .prova__img {
-    height: 42px;   
+    height: 42px;
 }
 
 .prova__iframe {
@@ -1491,7 +1463,7 @@ header {
 footer {
     display: flex;
     flex-direction: column;
-    background: var(--cinza);
+    background:#F4F4F4 ;
     width: 100%;
     min-height: 130px;
     color: #767676;
@@ -1504,7 +1476,7 @@ footer {
 footer hr {
     border: none;
     border-bottom: 1px solid #767676;
-    
+
 }
 
 .footer__logo {
@@ -1526,9 +1498,9 @@ footer hr {
 <!-- CSS Responsivo -->
 <style>
 @media only screen and (max-width: 1000px ) {
-    
+
     /* Geral */
-    
+
     .general--container__button {
         margin: 50px 0;
     }
@@ -1556,10 +1528,10 @@ footer hr {
     .saber, .body__border {
         border-radius: 30px 30px 0 0 ;
     }
-    
+
     /* Empresa */
 
-    .empresa { 
+    .empresa {
         border-radius: 30px 30px 0 0;
         padding-bottom: 100px;
         padding-top: 40px;
@@ -1576,7 +1548,7 @@ footer hr {
     .empresa__grid--2 {
         height: initial;
     }
-
+    
     /* Banner */
 
     .banner {
@@ -1589,7 +1561,7 @@ footer hr {
         width: 100%;
         gap: 40px;
     }
-    
+
     /* Card */
 
     .prova__iframe {
@@ -1613,7 +1585,7 @@ footer hr {
         height: initial;
         gap: 24px;
     }
-    
+
     .card__icon {
         left: -82px;
         top: 57%;
@@ -1748,7 +1720,7 @@ footer hr {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
 
     .rh__grid {
         grid-template-columns: 1fr;
@@ -1763,8 +1735,8 @@ footer hr {
 
 }
 
-@media only screen and (max-width: 500px) {
-    
+@media screen and (max-width: 500px) {
+
     p {
         font-size: 14px;
     }
@@ -1775,12 +1747,18 @@ footer hr {
         height: 60px;
     }
 
+    header a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    
     .header__img {
         height: 50%;
     }
 
     .banner__form {
-        gap: 10px;   
+        gap: 10px;
     }
 
     .banner__form .btn__green {
@@ -1805,7 +1783,7 @@ footer hr {
     .box__ctn p, .saber__description {
         font-size: 14px;
     }
-
+    
     /* popup */
 
     .popup__container {
@@ -1821,7 +1799,7 @@ footer hr {
     }
 
     .saber__img {
-        position: absolute;   
+        position: absolute;
         right: -5px;
         top: -19px;
     }
