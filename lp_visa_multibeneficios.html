@@ -654,20 +654,20 @@
         botoesPopup[i].addEventListener('click', handlePopup)
     }
     
-    setTimeout(()=> {
+    let timerPopup = setTimeout(()=> { // Timer para ativar o popup automáticamente
         popup.style.display = 'block'
         body.style.overflowY = 'hidden'
-    }, 20 * 1000)
+    }, 4 * 1000)
     
-
     function handlePopup(e) {
-        const openPopup = () => e.target.classList.forEach(element => {
+        const openPopup = () => e.target.classList.forEach(element => { // Busca as tags da const buttons, independente do index em que ela esteja na class=""
             if(buttons.some(obj => obj == element)){
                 return true
             }
         })
-
+        
         if(openPopup || e == true) {
+            clearTimeout(timerPopup) // Caso o botão tenha sido ativado antes do popup, impede que ele ao final do setTimeout
             if (popup.style.display == 'none' || popup.style.display == '') {
                 popup.style.display = 'block'
                 body.style.overflowY = 'hidden'
